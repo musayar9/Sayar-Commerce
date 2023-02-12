@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSite } from '../Context/SiteContext'
 
 function ProductItem({product}) {
+const [like, setLike]=useState(false)
 
-
-  const {cardMoney, totalMoney, basket, setBasket} = useSite()
+  const {cardMoney, totalMoney, basket, setBasket, favourite, setFavourite} = useSite()
 const basketProduct = basket.find(item => item.id === product.id )
-
+const favouriteİtem = favourite.find(like => like.id === product.id)
     const addProduct = () =>{
      const statusBasket = basket.find(item=> item.id === product.id)
         if(statusBasket){
@@ -14,28 +14,69 @@ const basketProduct = basket.find(item => item.id === product.id )
             setBasket([...basket.filter(item=>item.id !== product.id), statusBasket])
 
         }else{
-            setBasket([...basket,{id:product.id, title:product.title, amount:1}])
+            setBasket([...basket,{id:product.id, title:product.title, amount:1, price:product.price}])
    
         }
 
     }
-
-
     const removeProduct = () =>{
-        const interestProduct = basket.find(item=>item.id === product.id)
-        const removeProductBasket = basket.filter(item=> item.id !== product.id )
+      const interestProduct = basket.find(item=>item.id === product.id)
+      const removeProductBasket = basket.filter(item=> item.id !== product.id )
 
-        interestProduct.amount -= 1
+      interestProduct.amount -= 1
 
-        if(interestProduct.amount === 0){
-            setBasket([...removeProductBasket])
+      if(interestProduct.amount === 0){
+          setBasket([...removeProductBasket])
 
-        }else{
-            setBasket([...removeProductBasket, interestProduct])
-  
-        }
+      }else{
+          setBasket([...removeProductBasket, interestProduct])
+
+      }
+
+  }
+
+    const addFavourite = () =>{
+    const currentLike = favourite.find(like => like.id === product.id)
+    if(currentLike){
+      currentLike.amount += 1
+    setFavourite([...favourite.filter(like=>like.id !== product.id0),currentLike])
 
     }
+    else{
+    setFavourite([...favourite,{id:product.id, title:product.title, amount:1}])
+  }
+   }
+
+
+
+
+
+
+    const removeFavourite = () =>{
+      const defaultFavourite =  favourite.find(like=>like.id === product.id)
+      const removeLike = favourite.filter(like=>like.id !== product.id)
+
+      defaultFavourite.amount -=1
+
+      if(defaultFavourite.amount === 0){
+        setFavourite([...removeLike])
+      }
+      else{
+        setFavourite([...removeLike, defaultFavourite])
+      }
+    }
+
+    const favouriteProduct = () =>{
+      setLike(true)
+      addFavourite()
+  
+     
+    }
+
+  const favouriteTry = () =>{
+    setLike(false)
+    removeFavourite()
+  }
   return (
     <>
       <div className='productItem'>
@@ -48,6 +89,7 @@ const basketProduct = basket.find(item => item.id === product.id )
 
         <div className="basket">
             <p className="productAmount">{basketProduct ? basketProduct.amount : 0}</p>
+            <p className='productAmount'>{favouriteİtem ? favouriteİtem.amount : 0}</p>
             
             <button disabled={totalMoney + product.price > cardMoney} onClick={addProduct}>Sepete Ekle</button><br></br>
             <button  disabled={!basketProduct} onClick={removeProduct}>Sepetden Çıkar</button>
@@ -62,6 +104,22 @@ const basketProduct = basket.find(item => item.id === product.id )
                 }
             </p>
         </div>
+        <br>
+        </br>
+        {
+          !like ? <button className='btn btn-primary' onClick ={favouriteProduct}>beğen</button> 
+          : <button className='btn btn-danger' onClick={favouriteTry}>beğenmedim</button>
+
+        } 
+        <p>{
+         favouriteİtem ? `${favouriteİtem.title}` : null
+        
+        }</p>
+
+
+         {/* <button className={!like ? `btn btn-primary` : "btn btn-danger"} onClick ={favouriteProduct}>beğen</button>  */}
+
+    
 
       <style jsx>
               {`

@@ -8,6 +8,7 @@ const ProvideSite =({children})=>{
     const [totalMoney, setTotalMoney] = useState(0);
     const [basket, setBasket] = useState([]);
     const [search, setIsSearch ] = useState("")
+    const [favourite, setFavourite] = useState([])
     const data = {
         cardMoney,
         setCardMoney,
@@ -16,7 +17,9 @@ const ProvideSite =({children})=>{
         basket,
         setBasket,
         search,
-        setIsSearch
+        setIsSearch,
+        favourite,
+        setFavourite
     }
 
     return (
