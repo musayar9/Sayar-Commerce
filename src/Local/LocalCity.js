@@ -13,7 +13,7 @@ function LocalCity() {
         { value: 'Gaziantep', label: 'Gaziantep' },
       ];
   return (
-    <div>
+    <>
       
  <Form.Select  className='h-14 cursor-pointer'>
 
@@ -25,7 +25,7 @@ function LocalCity() {
                    )
                }
    </Form.Select>
-   </div>
+   </>
   )
 }
 

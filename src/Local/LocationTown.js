@@ -15,12 +15,12 @@ function LocationTown() {
 
     ]
   return (
-    <div>
+    <>
       
         <Form.Select className='h-14 cursor-pointer'>
                 {
                     optionsTown.map((town,index)=>(
-                        <option index={index} value={town.value}>{town.label} </option>
+                        <option key={index} value={town.value}>{town.label} </option>
                     ))
                 }
         </Form.Select>
@@ -29,7 +29,7 @@ function LocationTown() {
 
 
       
-    </div>
+    </>
   )
 }
 

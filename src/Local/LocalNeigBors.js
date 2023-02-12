@@ -15,7 +15,7 @@ function LocalNeigBors() {
     ]
 
   return (
-    <div>
+    <>
     
 
 
@@ -29,7 +29,7 @@ function LocalNeigBors() {
 
    </Form.Select>
 
-    </div>
+    </>
   )
 }
 
