@@ -9,7 +9,7 @@ function Profile() {
           <button className=" btn text-white bg-gradient-to-r from-purple-500 to-pink-500 text-center  border border-gray-500" id="try"
      onClick={()=>{setProfile(profile  ? false : true)}}> <span className='flex space-x-2 hover:text-violet-700 duration-500'><span>Musa</span><FaUserCircle size={24}/></span> </button>
  
-   <div className='absolute w-80 mt-2'>{profile ?  <ProfileAccount/> : null}</div>
+   <div className='absolute w-80 mt-2 z-30'>{profile ?  <ProfileAccount/> : null}</div>
     </div>
   )
 }

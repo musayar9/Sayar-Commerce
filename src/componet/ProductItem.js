@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSite } from '../Context/SiteContext'
-
+import {BsSuitHeart, BsFillSuitHeartFill} from 'react-icons/bs'
 function ProductItem({product}) {
 const [like, setLike]=useState(false)
 
@@ -80,8 +80,18 @@ const favouriteİtem = favourite.find(like => like.id === product.id)
   return (
     <>
       <div className='productItem'>
-        <h5 className='header'>{product.title}</h5>
+      <h5 className='header'>{product.title}</h5>
+        <picture className='relative mt-4'>
+        {
+          !like ? <button className='mt-2 w-10 h-10 top-2 right-2 border border-gray-200 text-purple-700 items-center justify-center flex absolute rounded-lg' onClick ={favouriteProduct}><BsSuitHeart/></button> 
+          : <button className='mt-2 w-10 h-10 top-2 right-2 border border-gray-200  items-center justify-center flex absolute rounded-lg ' onClick={favouriteTry}><BsFillSuitHeartFill className='text-red-700'/></button>
+          
+        } 
+         
         <img src={product.image} alt={product.alt}/>
+        </picture>
+     
+   
         <p className="alt">{product.alt}</p>
         <span className='price'>{product.price}TL</span>
 
@@ -106,11 +116,7 @@ const favouriteİtem = favourite.find(like => like.id === product.id)
         </div>
         <br>
         </br>
-        {
-          !like ? <button className='btn btn-primary' onClick ={favouriteProduct}>beğen</button> 
-          : <button className='btn btn-danger' onClick={favouriteTry}>beğenmedim</button>
-
-        } 
+     
         <p>{
          favouriteİtem ? `${favouriteİtem.title}` : null
         

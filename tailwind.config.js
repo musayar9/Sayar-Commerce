@@ -7,7 +7,8 @@ module.exports = {
         center:true
       },
       width:{
-        "98":"45rem"
+        "85":"23rem",
+        "98":"50rem"
       }
     },
   },

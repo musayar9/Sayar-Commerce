@@ -11,11 +11,11 @@ function BasketProduct() {
         totalMoney > 0 && (
             <>
             {payment ?
-                <div className='space-y-4 p-2 border border-gray-700 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-50 text-md cursor-pointer text-white'>
+                <div className=' space-y-4 p-2 border border-gray-700 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-50 text-md cursor-pointer text-white'>
                 <h3 className='text-center text-xl font-bold'>Sepete Eklediklerim</h3>
                
                   
-                  <ul className=' space-y-2'>
+                  <ul className=' space-y-4'>
                    
                     {
                         basket.map((item, index)=>(
@@ -24,9 +24,9 @@ function BasketProduct() {
                     }
                   </ul>
                   <div className='border-bottom border-gray-500'></div>
-                  <p className='p-1 w-80 rounded-lg text-right text-white   bg-gradient-to-r  from-purple-500 to-pink-500 '> Toplam Tutar= {totalMoney} TL</p>
+                  <p className='p-1 w-85 rounded-lg text-right text-xl font-bold   bg-gradient-to-r  from-purple-500 to-pink-500 text-red-700'> Toplam Tutar= {totalMoney} TL</p>
                   <div className='border-bottom border-gray-500'></div>
-                  <button className='btn text-white w-80 border border-gray-500 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={()=>setPayment(false)}>Ödeme Yap</button>
+                  <button className='btn text-white w-85 border border-gray-500 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={()=>setPayment(false)}>Ödeme Yap</button>
                 </div>
              : null}
              </>
