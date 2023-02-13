@@ -8,7 +8,8 @@ module.exports = {
       },
       width:{
         "85":"23rem",
-        "98":"50rem"
+        "98":"50rem",
+        "120":"75rem"
       }
     },
   },

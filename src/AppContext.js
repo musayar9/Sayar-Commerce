@@ -30,7 +30,7 @@ function AppContext() {
 
       <MoneyStatus/>
 
-      <div className='productContainer products'>
+      <div className='w-120 m-auto flex flex-wrap justify-around p-8'>
 
       {
        products

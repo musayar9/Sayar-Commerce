@@ -6,7 +6,7 @@ const [like, setLike]=useState(false)
 
   const {cardMoney, totalMoney, basket, setBasket, favourite, setFavourite} = useSite()
 const basketProduct = basket.find(item => item.id === product.id )
-const favouriteİtem = favourite.find(like => like.id === product.id)
+// const favouriteİtem = favourite.find(like => like.id === product.id)
     const addProduct = () =>{
      const statusBasket = basket.find(item=> item.id === product.id)
         if(statusBasket){
@@ -79,101 +79,64 @@ const favouriteİtem = favourite.find(like => like.id === product.id)
   }
   return (
     <>
-      <div className='productItem'>
-      <h5 className='header'>{product.title}</h5>
-        <picture className='relative mt-4'>
+      <div className='p-4  border border-gray-600 rounded-xl mb-5 w-[24%]'>
+       <h5 className='p-2 flex flex-nowrap font-bold text-[18px] mb-[20px] products'>{product.title}</h5>
+     
+        <picture className='relative mt-[5px] shrink-0 '>
         {
-          !like ? <button className='mt-2 w-10 h-10 top-2 right-2 border border-gray-200 text-purple-700 items-center justify-center flex absolute rounded-lg' onClick ={favouriteProduct}><BsSuitHeart/></button> 
-          : <button className='mt-2 w-10 h-10 top-2 right-2 border border-gray-200  items-center justify-center flex absolute rounded-lg ' onClick={favouriteTry}><BsFillSuitHeartFill className='text-red-700'/></button>
+          !like ? <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-pink-800 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center justify-center flex absolute  rounded-full drop-shadow-xl' onClick ={favouriteProduct}><BsSuitHeart size={24}/></button> 
+          : <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-gray-200  items-center justify-center flex absolute rounded-full drop-shadow-xl ' onClick={favouriteTry}><BsFillSuitHeartFill size={24} className='text-pink-700'/></button>
           
         } 
          
-        <img src={product.image} alt={product.alt}/>
+        <img src={product.image} alt={product.alt} className="rounded-full w-[100%] shrink-0 drop-shadow-lg  p-2 "/>
         </picture>
      
    
-        <p className="alt">{product.alt}</p>
-        <span className='price'>{product.price}TL</span>
+        <p className="shrink-0 flex font-bold mt-4 text-gray-400 ">{product.alt}</p>
+        <span className='flex justify-end text-violet-700 font-bold text-2xl p-2'>{product.price}TL</span>
 
 
 
-        <div className="basket">
-            <p className="productAmount">{basketProduct ? basketProduct.amount : 0}</p>
-            <p className='productAmount'>{favouriteİtem ? favouriteİtem.amount : 0}</p>
-            
-            <button disabled={totalMoney + product.price > cardMoney} onClick={addProduct}>Sepete Ekle</button><br></br>
-            <button  disabled={!basketProduct} onClick={removeProduct}>Sepetden Çıkar</button>
+        <div className=" space-y-4 p-2">
+        <div className='flex items-center justify-center'>  <p className="border w-14 h-14 border-gray-400 text-violet-700 flex items-center  justify-center rounded-full text-center text-xl font-bold">{basketProduct ? basketProduct.amount : 0} </p></div>
+            {/* <p className='productAmount'>{favouriteİtem ? favouriteİtem.amount : 0}</p> */}
+            <div className='space-y-2 w-full '>
+        
+            <button className='px-6 py-2 w-full text-xl text-purple-600 font-semibold  rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2
+            disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white disabled:cursor-not-allowed 
+            ' disabled={totalMoney + product.price > cardMoney} onClick={addProduct}>Sepete Ekle</button><br></br>
+            <button className='px-6 py-2 w-full text-xl text-pink-600 font-semibold 
+            rounded-full border border-pink-200 hover:text-white hover:bg-pink-600
+             hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 cursor-pointer disabled:cursor-not-allowed
+             disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white' disabled={!basketProduct} onClick={removeProduct}>Sepetden Çıkar</button>
+            </div>
+          
 
-            <p>
+            {/* <p>
                 {basketProduct ? `${basketProduct.amount} adet ürün sepete eklendi` : null}
-            </p>
+            </p> */}
 
-            <p>
+            {/* <p>
                 {
                     basketProduct ? `Toplam Fiyat = ${product.price * basketProduct.amount} Tl` : null
                 }
-            </p>
+            </p> */}
         </div>
         <br>
         </br>
-     
+{/*      
         <p>{
          favouriteİtem ? `${favouriteİtem.title}` : null
         
-        }</p>
+        }</p> */}
 
 
          {/* <button className={!like ? `btn btn-primary` : "btn btn-danger"} onClick ={favouriteProduct}>beğen</button>  */}
 
     
 
-      <style jsx>
-              {`
-              .productItem{
-                padding:20px;
-                background:#fff;
-                border:1px solid rgba(0,0,0,0.16);
-                border-radius:8px;
-                width:25%;
-                margin-bottom:20px;
-              }
-
-              .header{
-                font-size:16px;
-                display:flex;
-                flex-wrap:nowrap;
-              }
-              .productItem img{
-                display:flex;
-                align-items:center;
-                flex-shrink:0;
-                width:100%;
-              
-              }
-              .alt{
-             display:flex;
-             
-                font-size:14px;
-                font-weight:700;
-                color:#999993;
-                flex-shrink:0;
-              }
-
-              .price{
-              
-                font-size:24px;
-                font-weight:bold;
-                color:orange;
-            
-              }
-              .basket{
-                display:inline;
-                aligns-items:center;
-                justify-content:center;
-              }
-              
-              `}
-            </style>
+   
       </div>
     
     </>

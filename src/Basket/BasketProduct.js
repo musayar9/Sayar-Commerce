@@ -3,8 +3,13 @@ import products from '../product.json'
 import { useSite } from '../Context/SiteContext'
 import BasketProductItem from './BasketProductItem'
 function BasketProduct() {
-   const {basket, totalMoney} = useSite()
+   const {basket, totalMoney, setBasket} = useSite()
    const [payment, setPayment] = useState(true)
+
+   const EmptyBasket = () =>{
+    setBasket([])
+    setPayment(false)
+   }
   return (
     <>
     {
@@ -26,7 +31,7 @@ function BasketProduct() {
                   <div className='border-bottom border-gray-500'></div>
                   <p className='p-1 w-85 rounded-lg text-right text-xl font-bold   bg-gradient-to-r  from-purple-500 to-pink-500 text-red-700'> Toplam Tutar= {totalMoney} TL</p>
                   <div className='border-bottom border-gray-500'></div>
-                  <button className='btn text-white w-85 border border-gray-500 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={()=>setPayment(false)}>Ödeme Yap</button>
+                  <button className='btn text-white w-85 border border-gray-500 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Ödeme Yap</button>
                 </div>
              : null}
              </>
