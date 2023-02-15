@@ -9,7 +9,9 @@ import Navbar from './componet/Navbar'
 import { useSite } from './Context/SiteContext';
 import About from './CommerceAbout/About';
 import { useWindowWidth } from '@react-hook/window-size';
-import MultiCarousel from './Brand/MultiCarousel';
+import BrandProduct from './Brand/BrandProduct';
+import CommentSlider from './Comments/CommentSlider';
+
 
 
 function AppContext() {
@@ -32,10 +34,12 @@ const width = useWindowWidth()
     </div>
 
 
-    {width < 640 && <MultiCarousel />}
+    {width < 640 && <BrandProduct />}
+    {width < 640 && <CommentSlider />}
 
 <div className='grid gap-y-8 py-4 container mx-auto'>
-{width > 640 && <MultiCarousel />}
+{width > 640 && <BrandProduct />}
+{width > 640 && <CommentSlider/>}
 <About/>
 </div>
 
