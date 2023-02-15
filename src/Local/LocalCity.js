@@ -15,7 +15,7 @@ function LocalCity() {
   return (
     <>
       
- <Form.Select  className='h-14 cursor-pointer'>
+ <select  className='h-14 w-full px-2 py-2 text-gray-700 cursor-pointer border border-gray-300 rounded-lg outline-none  focus:border-violet-700'>
 
 {
                    options.map((option,key)=>(
@@ -24,7 +24,7 @@ function LocalCity() {
 
                    )
                }
-   </Form.Select>
+   </select>
    </>
   )
 }

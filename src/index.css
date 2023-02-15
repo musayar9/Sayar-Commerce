@@ -28,6 +28,13 @@ code {
 
 }
 
+.image{
+
+  padding: 3px;
+  background: linear-gradient(to right, #AB54F3 10%,#EA489A 100%);
+  border-radius: 50%;
+}
+
 
 
 

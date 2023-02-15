@@ -16,7 +16,7 @@ function BasketProduct() {
         totalMoney > 0 && (
             <>
             {payment ?
-                <div className=' space-y-4 p-2 border border-gray-700 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-50 text-md cursor-pointer text-white'>
+                <div  className='z-10 space-y-4 px-2  py-6 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-96 text-md cursor-pointer text-white'>
                 <h3 className='text-center text-xl font-bold'>Sepete Eklediklerim</h3>
                
                   
@@ -28,10 +28,10 @@ function BasketProduct() {
                         ))
                     }
                   </ul>
-                  <div className='border-bottom border-gray-500'></div>
+                  <div className='border-b border-gray-300'></div>
                   <p className='p-1 w-85 rounded-lg text-right text-xl font-bold   bg-gradient-to-r  from-purple-500 to-pink-500 text-red-700'> Toplam Tutar= {totalMoney} TL</p>
-                  <div className='border-bottom border-gray-500'></div>
-                  <button className='btn text-white w-85 border border-gray-500 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Ödeme Yap</button>
+                  <div className='border-b border-gray-300'></div>
+                  <button className='border border-gray-300 px-4 py-2 rounded-lg text-white w-85 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Ödeme Yap</button>
                 </div>
              : null}
              </>

@@ -79,12 +79,12 @@ const basketProduct = basket.find(item => item.id === product.id )
   }
   return (
     <>
-      <div className='p-4  border border-gray-600 rounded-xl mb-5 w-[24%]'>
+      <div className='p-4  border border-gray-300 rounded-xl mb-5 w-[24%]'>
        <h5 className='p-2  font-bold text-[20px] mb-[20px] products truncate '>{product.title}</h5>
      
         <picture className='relative mt-[5px] shrink-0 '>
         {
-          !like ? <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-pink-800 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center justify-center flex absolute  rounded-full drop-shadow-xl' onClick ={favouriteProduct}><BsSuitHeart size={24}/></button> 
+          !like ? <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-gray-300 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center justify-center flex absolute  rounded-full drop-shadow-xl' onClick ={favouriteProduct}><BsSuitHeart size={24}/></button> 
           : <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-gray-200  items-center justify-center flex absolute rounded-full drop-shadow-xl ' onClick={favouriteTry}><BsFillSuitHeartFill size={24} className='text-pink-700'/></button>
           
         } 
@@ -99,7 +99,7 @@ const basketProduct = basket.find(item => item.id === product.id )
 
 
         <div className=" space-y-4 p-2">
-        <div className='flex items-center justify-center'>  <p className="border w-14 h-14 border-gray-400 products flex items-center  justify-center rounded-full text-center text-xl font-bold">{basketProduct ? basketProduct.amount : 0} </p></div>
+        <div className='flex items-center justify-center'>  <p className="border w-14 h-14 border-gray-300 products flex items-center  justify-center rounded-full text-center text-xl font-bold">{basketProduct ? basketProduct.amount : 0} </p></div>
             {/* <p className='productAmount'>{favouriteİtem ? favouriteİtem.amount : 0}</p> */}
             <div className='space-y-2 w-full '>
         

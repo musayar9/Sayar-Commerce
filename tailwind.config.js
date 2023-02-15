@@ -4,7 +4,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}", "./public.html"],
   theme: {
     extend: {
-     
+     container:{
+      center:true
+     },
+
       width:{
         "85":"23rem",
         "98":"50rem",

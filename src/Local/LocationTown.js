@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from 'react-bootstrap/Form';
+
 
 function LocationTown() {
     const optionsTown = [
@@ -17,13 +17,13 @@ function LocationTown() {
   return (
     <>
       
-        <Form.Select className='h-14 cursor-pointer'>
+        <select className='h-14 cursor-pointer  w-full px-2 py-2 pr-4 text-gray-700 rounded-lg outline-none border focus:border-violet-700'>
                 {
                     optionsTown.map((town,index)=>(
                         <option key={index} value={town.value}>{town.label} </option>
                     ))
                 }
-        </Form.Select>
+        </select>
 
 
 

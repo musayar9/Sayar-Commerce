@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from 'react-bootstrap/Form';
+
 function LocalNeigBors() {
        const optionNeig = [
         {value:"Atatürk Mah.", label:"Atatürk Mah"},
@@ -20,14 +20,14 @@ function LocalNeigBors() {
 
 
       
- <Form.Select className='h-14 cursor-pointer'>
+ <select className='h-14 cursor-pointer  w-full px-2 py-2 text-gray-700 rounded-lg outline-none border focus:border-violet-700'>
  {
         optionNeig.map((neigh, index)=>(
             <option index={index} value={neigh.value}>{neigh.label}</option>
         ))
       }
 
-   </Form.Select>
+   </select>
 
     </>
   )

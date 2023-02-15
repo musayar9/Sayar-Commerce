@@ -10,7 +10,7 @@ function ProfileAccount() {
   return (
     <>
 
-    <ul className='space-y-2 p-2 border border-gray-700 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-50 text-md cursor-pointer text-white'>
+    <ul className='space-y-2 p-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-44 text-md cursor-pointer text-white'>
         <li className='flex space-x-2 items-center   hover:text-pink-700 duration-500'><MdLocalGroceryStore/> <span>Sepetim</span></li>
         <li className='flex space-x-2 items-center hover:text-pink-700 duration-500'><FaUserEdit/><span>Kullanıcı B.</span></li>
         <li className='flex space-x-2 items-center hover:text-pink-700 duration-500'><FcFeedback/><span>Değerlen...</span></li>

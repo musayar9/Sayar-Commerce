@@ -10,13 +10,13 @@ import FavouriteNavbar from '../Favourite/FavouriteNavbar.js'
 
 function Navbar() {
   return (
-    <div className='container '>
+    <div className='container'>
 
       <nav className='flex items-center justify-between'>
      
         <ul className='flex items-center justify-center ml-14 space-x-3'>
-            <li className='flex border border-gray-500 btn bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-2 space-x-2'>Anasayfa </li>
-            <li className='flex border border-gray-500 btn bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-2 space-x-2'>Ürünler</li>
+            <li className='flex border border-gray-300 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-2 space-x-2'>Anasayfa </li>
+            <li className='flex border border-gray-300 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-2 space-x-2'>Ürünler</li>
             <li className="flex relative"> 
                 <SearchStatus/>
 
