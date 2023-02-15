@@ -1,5 +1,5 @@
 import React from 'react'
-import products from '../product.json'
+import products from '../Api/product.json'
 import SearchValue from './SearchValue';
 
 

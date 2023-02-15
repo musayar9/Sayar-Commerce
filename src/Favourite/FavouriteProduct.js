@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSite } from '../Context/SiteContext'
 import FavouriteLikeItem from './FavouriteLikeItem'
-import products from '../product.json'
+import products from '../Api/product.json'
 function FavouriteProduct() {
     const { favourite } = useSite()
     const [pageFavourite, setPageFavourite] = useState(true)

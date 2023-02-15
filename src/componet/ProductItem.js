@@ -80,7 +80,7 @@ const basketProduct = basket.find(item => item.id === product.id )
   return (
     <>
       <div className='p-4  border border-gray-600 rounded-xl mb-5 w-[24%]'>
-       <h5 className='p-2 flex flex-nowrap font-bold text-[18px] mb-[20px] products'>{product.title}</h5>
+       <h5 className='p-2  font-bold text-[20px] mb-[20px] products truncate '>{product.title}</h5>
      
         <picture className='relative mt-[5px] shrink-0 '>
         {
@@ -89,17 +89,17 @@ const basketProduct = basket.find(item => item.id === product.id )
           
         } 
          
-        <img src={product.image} alt={product.alt} className="rounded-full w-[100%] shrink-0 drop-shadow-lg  p-2 "/>
+        <img src={product.image} alt={product.alt} className=" w-[100%] shrink-0    p-2 "/>
         </picture>
      
    
         <p className="shrink-0 flex font-bold mt-4 text-gray-400 ">{product.alt}</p>
-        <span className='flex justify-end text-violet-700 font-bold text-2xl p-2'>{product.price}TL</span>
+        <span className='flex justify-end products font-bold text-2xl p-2'>{product.price}TL</span>
 
 
 
         <div className=" space-y-4 p-2">
-        <div className='flex items-center justify-center'>  <p className="border w-14 h-14 border-gray-400 text-violet-700 flex items-center  justify-center rounded-full text-center text-xl font-bold">{basketProduct ? basketProduct.amount : 0} </p></div>
+        <div className='flex items-center justify-center'>  <p className="border w-14 h-14 border-gray-400 products flex items-center  justify-center rounded-full text-center text-xl font-bold">{basketProduct ? basketProduct.amount : 0} </p></div>
             {/* <p className='productAmount'>{favouriteİtem ? favouriteİtem.amount : 0}</p> */}
             <div className='space-y-2 w-full '>
         

@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "title":"Nike Beyaz Çorap",
+        "title":"Nike 3'lü Beyaz Çorap",
         "image":"https://cdn.dsmcdn.com/ty103/product/media/images/20210414/20/80154183/138392791/1/1_org.jpg",
         "alt":"3'lü Nike Çorap",
         "price":166
@@ -12,7 +12,7 @@
 
     {
         "id":2,
-        "title":"Nike Dry Park",
+        "title":"Nike Dry Park T-Shirt",
         "image":"https://cdn.dsmcdn.com/ty68/product/media/images/20210215/18/62917492/64159934/1/1_org.jpg",
         "alt":"Nike Erkek Tişörtü",
         "price":274

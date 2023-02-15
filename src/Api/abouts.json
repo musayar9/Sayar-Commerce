@@ -1,0 +1,21 @@
+ [
+    {
+        "id":1,
+        "title":"Hızlı ve Güvevinilir Tek Adres",
+        "description":"Sayar'dan verdiğiniz her sipariş 20 dk içinde kapınızda",
+        "image":"commerce-3"
+    },
+    {
+        "id":2,
+        "title":"İsteyin yeter",
+        "description":"Sayar'da istediğiniz her ürüne bir tık uzaktasınız",
+        "image":"commerce-1"
+
+    },
+    {
+        "id":3,
+        "title":"Her siparişinizde kargo ücretsiz",
+        "description":"Sayar'dan vereceğiniz her siparişinizde kargo bedeli tarafmızca karşılanmaktadır.",
+        "image":"commerce-2"
+    }
+]

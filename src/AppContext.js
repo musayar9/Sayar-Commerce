@@ -3,16 +3,19 @@ import './App.css';
 import {useEffect} from 'react'
 import MoneyStatus from './componet/MoneyStatus';
 import ProductItem from './componet/ProductItem'
-import products from './product.json'
+import products from './Api/product.json'
 import Basket from './Basket/Basket';
 import Navbar from './componet/Navbar'
 import { useSite } from './Context/SiteContext';
+import About from './CommerceAbout/About';
+import { useWindowWidth } from '@react-hook/window-size';
+import MultiCarousel from './Brand/MultiCarousel';
 
 
 function AppContext() {
 
   const { totalMoney, setTotalMoney, basket, search} = useSite()
-
+const width = useWindowWidth()
  useEffect(() =>{
 
   setTotalMoney(basket.reduce((acc, item) =>{
@@ -27,6 +30,14 @@ function AppContext() {
     <Navbar/>
 
     </div>
+
+
+    {width < 640 && <MultiCarousel />}
+
+<div className='grid gap-y-8 py-4 container mx-auto'>
+{width > 640 && <MultiCarousel />}
+<About/>
+</div>
 
       <MoneyStatus/>
 
@@ -45,6 +56,8 @@ function AppContext() {
         totalMoney > 0 &&
         <Basket products ={products} totalMoney ={totalMoney} basket={basket}/>
       }
+
+
     </>
   );
 }

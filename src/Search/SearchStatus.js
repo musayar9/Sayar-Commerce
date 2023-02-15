@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {BsSearch} from 'react-icons/bs'
 import { useSite } from '../Context/SiteContext'
-import products from '../product.json'
+import products from '../Api/product.json'
 import SearchProduct from './SearchProduct'
 
 function SearchStatus() {
