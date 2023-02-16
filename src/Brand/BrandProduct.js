@@ -39,14 +39,16 @@ function BrandProduct() {
   return (
     <>
       <h2 className="pt-2 pl-14 -mb-2 text-2xl font-bold products mt-6">Markalar</h2>
-      <div className='w-140 m-auto text-center p-4  rounded-xl cursor-pointer border-r border-l mt-6'>
+      <div className='w-150 m-auto text-center p-4  rounded-xl cursor-pointer border-r border-l mt-6
+ relative  after:bg-gradient-to-r after:from-purple-300 after:to-transparent after:absolute after:inset-0 after:w-full after:rounded-xl after:h-full after:z-10
+      '>
 
         <Carousel showDots={false} responsive={responsive} autoPlay={true} infinite={true}
           swipeable={500} autoPlaySpeed={3000} style={{ width: width < 640 ? width : '' }}
         >
           {brands && brands.map((brand) => (
-            <div className='flex items-center justify-center -z-50'>
-              <div key={brand.id} className="px-2 p-2 ">
+            <div key={brand.id} className='flex items-center justify-center -z-50'>
+              <div  className="px-2 p-2 ">
                 <img src={`markaImg/${brand.image}`} alt={brand.title} className="rounded-full w-24 h-24  border border-gray-300 drop-shadow-xl" />
                 <p className="text-md p-2 font-bold products">{brand.title}</p>
               </div>

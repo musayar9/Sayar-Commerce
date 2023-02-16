@@ -4,6 +4,7 @@ import {useEffect} from 'react'
 import MoneyStatus from './componet/MoneyStatus';
 import ProductItem from './componet/ProductItem'
 import products from './Api/product.json'
+import favourites from './Api/favorite.json'
 import Basket from './Basket/Basket';
 import Navbar from './componet/Navbar'
 import { useSite } from './Context/SiteContext';
@@ -11,12 +12,12 @@ import About from './CommerceAbout/About';
 import { useWindowWidth } from '@react-hook/window-size';
 import BrandProduct from './Brand/BrandProduct';
 import CommentSlider from './Comments/CommentSlider';
-
+import StarProduct from './AllFavourite/StarProduct'
 
 
 function AppContext() {
 
-  const { totalMoney, setTotalMoney, basket, search} = useSite()
+  const { totalMoney, setTotalMoney, basket, search, starBasket, setStarMoney} = useSite()
 const width = useWindowWidth()
  useEffect(() =>{
 
@@ -24,14 +25,20 @@ const width = useWindowWidth()
     return acc + (item.amount * (products.find(product => product.id === item.id).price))
   },0))
 
+  setStarMoney(starBasket.reduce((acc, star)=>{
+    return acc +(star.amount * (favourites.find(favourite => favourite.id === star.id).price) )
+  },0))
+
+  
  console.log(basket)
-}, [basket, setTotalMoney])
+}, [basket, setTotalMoney, starBasket, setStarMoney])
   return (
     <>
     <div className='bg-gradient-to-r from-purple-500 to-pink-500  p-6'>
     <Navbar/>
 
     </div>
+    <StarProduct/>
 
 
     {width < 640 && <BrandProduct />}
@@ -58,7 +65,7 @@ const width = useWindowWidth()
 
       {
         totalMoney > 0 &&
-        <Basket products ={products} totalMoney ={totalMoney} basket={basket}/>
+        <Basket products = {products} totalMoney ={totalMoney} basket={basket}/>
       }
 
 

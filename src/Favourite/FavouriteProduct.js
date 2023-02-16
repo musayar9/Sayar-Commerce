@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useSite } from '../Context/SiteContext'
 import FavouriteLikeItem from './FavouriteLikeItem'
 import products from '../Api/product.json'
+import StartData from '../AllFavourite/StartData'
 function FavouriteProduct() {
     const { favourite } = useSite()
     const [pageFavourite, setPageFavourite] = useState(true)
@@ -20,12 +21,13 @@ function FavouriteProduct() {
                
                {
                    favourite.map((like)=>( 
-                       <FavouriteLikeItem key={like.id} like={like} product={products.find(product=>product.id === like.id)}/>
+                       <FavouriteLikeItem key={like.id} like={like}
+                        product={products.find(product=>product.id === like.id)}/>
                        
                    )) 
                }
              </ul> 
-          
+          <StartData/>
          
             
              

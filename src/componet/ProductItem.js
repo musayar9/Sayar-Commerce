@@ -39,7 +39,7 @@ const basketProduct = basket.find(item => item.id === product.id )
     const currentLike = favourite.find(like => like.id === product.id)
     if(currentLike){
       currentLike.amount += 1
-    setFavourite([...favourite.filter(like=>like.id !== product.id0),currentLike])
+    setFavourite([...favourite.filter(like=>like.id !== product.id),currentLike])
 
     }
     else{
@@ -99,8 +99,11 @@ const basketProduct = basket.find(item => item.id === product.id )
 
 
         <div className=" space-y-4 p-2">
-        <div className='flex items-center justify-center'>  <p className="border w-14 h-14 border-gray-300 products flex items-center  justify-center rounded-full text-center text-xl font-bold">{basketProduct ? basketProduct.amount : 0} </p></div>
-            {/* <p className='productAmount'>{favouriteİtem ? favouriteİtem.amount : 0}</p> */}
+        <div className='flex items-center justify-center'>
+            <p className="border w-14 h-14 border-gray-300 products
+             flex items-center  justify-center rounded-full text-center
+              text-xl font-bold">{basketProduct ? basketProduct.amount : 0} </p></div>
+         
             <div className='space-y-2 w-full '>
         
             <button className='px-6 py-2 w-full text-xl text-purple-600 font-semibold  rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2

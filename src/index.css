@@ -52,3 +52,15 @@ code {
 
 
 
+.search{
+  align-items: center;
+}
+.search::-webkit-scrollbar{
+  width: 12px;
+}
+
+.search::-webkit-scrollbar-thumb{
+  border-radius: 12px;
+  background: linear-gradient(to right, #AB54F3 10%,#EA489A 100%);
+  border: 1px solid gainsboro
+}

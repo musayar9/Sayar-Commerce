@@ -4,11 +4,15 @@ const Context = createContext()
 
 const ProvideSite =({children})=>{
    
-    const [cardMoney, setCardMoney] = useState(10000);
+    const [cardMoney, setCardMoney] = useState(100000000);
     const [totalMoney, setTotalMoney] = useState(0);
+    const [starMoney, setStarMoney] = useState(0);
     const [basket, setBasket] = useState([]);
     const [search, setIsSearch ] = useState("")
+    const [searchValue,setSearchValue] = useState("")
     const [favourite, setFavourite] = useState([]);
+    const[starBasket, setStarBasket] = useState([])
+    const[starFavourite, setStarFavourite] = useState([])
    const [like, setLike] = useState(false)
     const data = {
         cardMoney,
@@ -22,8 +26,13 @@ const ProvideSite =({children})=>{
         favourite,
         setFavourite,
         like, 
-        setLike
-       
+        setLike,
+        searchValue,setSearchValue,
+        starBasket,setStarBasket,
+        starFavourite,setStarFavourite,
+        starMoney, 
+        setStarMoney
+    
     }
 
     return (

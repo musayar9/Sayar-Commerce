@@ -3,7 +3,7 @@ import products from '../Api/product.json'
 import SearchValue from './SearchValue';
 
 
-function SearchProduct({search}) {
+function SearchProduct({search, isInput, setIsInput}) {
     
   return (
     <>
@@ -11,9 +11,10 @@ function SearchProduct({search}) {
         
           {
             products
-            .filter((product) => { return search.toLowerCase() === '' ? product : product.title.toLowerCase().includes(search); })
+            .filter((product) => { return search.toLowerCase('tr') === '' ? product : product.title.toLowerCase('tr'
+            ).includes(search); })
             .map((product)=>(
-              <SearchValue key={product.id} product={product}/>
+              <SearchValue key={product.id} product={product} isInput={isInput} setIsInput={setIsInput}/>
               // <li className='flex space-y-2 space-x-2 ' key={product.id}>       
     
               // <img className='w-12 h-12 rounded-xl' src={product.image} alt={product.alt}/>
