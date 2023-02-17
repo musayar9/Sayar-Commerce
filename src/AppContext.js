@@ -38,15 +38,17 @@ const width = useWindowWidth()
     <Navbar/>
 
     </div>
-    <StarProduct/>
+  
 
-
+    {width < 640 && <StarProduct />}
     {width < 640 && <BrandProduct />}
     {width < 640 && <CommentSlider />}
 
 <div className='grid gap-y-8 py-4 container mx-auto'>
+  {width > 640 &&  <StarProduct/>}
 {width > 640 && <BrandProduct />}
 {width > 640 && <CommentSlider/>}
+
 <About/>
 </div>
 

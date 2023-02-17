@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import LocalCity from './LocalCity';
 import LocalNeigBors from './LocalNeigBors';
 import LocationTown from './LocationTown'
@@ -9,8 +10,20 @@ import LocationTown from './LocationTown'
 function Location() {
 
     const [isFilter, setİsFilter] = useState(true)
-
-
+    const showLocal = () =>toast.info('Konum Bilgisi Güncellendi', {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: false,
+        theme: "light",
+        });
+const handleClick = () =>{
+    showLocal()
+    setİsFilter(false)
+}
     return (
         <>
             {
@@ -24,8 +37,9 @@ function Location() {
                         <LocationTown />
 
                         <LocalNeigBors />
-                        <button className=" text-white w-72 px-2 py-2 rounded-lg border border-gray-300 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500" onClick={() => setİsFilter(false)}>Onayla</button>
-
+                        <button className=" text-white w-72 px-2 py-2 rounded-lg border border-gray-300 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500" onClick={handleClick}>Onayla</button>
+                        <ToastContainer
+/>
                     </div>
                  : null}
         </>

@@ -1,23 +1,48 @@
 import React, { useState } from 'react'
 import { useSite } from '../Context/SiteContext'
 import {BsSuitHeart, BsFillSuitHeartFill} from 'react-icons/bs'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function ProductItem({product}) {
 const [like, setLike]=useState(false)
+const showToastMessage = () => {
+  toast.success('Ürün Sepete Eklendi !', {
+      position: toast.POSITION.TOP_RIGHT
+  });
+};
+const errorMessage = () =>{
+  toast.error("Ürün Sepetden Çıkartıldı !",{
+    position: toast.POSITION.TOP_RIGHT
+  })
 
+}
+
+const successFavourite = () =>{
+  toast.success("Ürün Favorilere Eklendi",{
+    position: toast.POSITION.TOP_RIGHT
+  })
+}
+
+const errorFavourite = ()=>{
+  toast.error("Ürün Favorilerden Kaldırıldı",{
+    position:toast.POSITION.TOP_RIGHT
+  })
+}
   const {cardMoney, totalMoney, basket, setBasket, favourite, setFavourite} = useSite()
 const basketProduct = basket.find(item => item.id === product.id )
 // const favouriteİtem = favourite.find(like => like.id === product.id)
     const addProduct = () =>{
+  
      const statusBasket = basket.find(item=> item.id === product.id)
         if(statusBasket){
             statusBasket.amount += 1
             setBasket([...basket.filter(item=>item.id !== product.id), statusBasket])
-
+        
         }else{
             setBasket([...basket,{id:product.id, title:product.title, amount:1, price:product.price}])
-   
+           
         }
-
+        showToastMessage()
     }
     const removeProduct = () =>{
       const interestProduct = basket.find(item=>item.id === product.id)
@@ -27,12 +52,12 @@ const basketProduct = basket.find(item => item.id === product.id )
 
       if(interestProduct.amount === 0){
           setBasket([...removeProductBasket])
-
+       
       }else{
           setBasket([...removeProductBasket, interestProduct])
-
+        
       }
-
+      errorMessage()
   }
 
     const addFavourite = () =>{
@@ -69,13 +94,14 @@ const basketProduct = basket.find(item => item.id === product.id )
     const favouriteProduct = () =>{
       setLike(true)
       addFavourite()
-  
+  successFavourite()
      
     }
 
   const favouriteTry = () =>{
     setLike(false)
     removeFavourite()
+    errorFavourite()
   }
   return (
     <>
@@ -94,7 +120,7 @@ const basketProduct = basket.find(item => item.id === product.id )
      
    
         <p className="shrink-0 flex font-bold mt-4 text-gray-400 ">{product.alt}</p>
-        <span className='flex justify-end products font-bold text-2xl p-2'>{product.price}TL</span>
+        <span className='flex justify-end products font-bold text-2xl p-2'>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price)}</span>
 
 
 
@@ -141,7 +167,7 @@ const basketProduct = basket.find(item => item.id === product.id )
 
    
       </div>
-    
+    <ToastContainer autoClose={1000} pauseOnFocusLoss={true} pauseOnHover={false} />
     </>
    
   )

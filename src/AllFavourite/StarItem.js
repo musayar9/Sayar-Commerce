@@ -80,21 +80,21 @@ function StarItem({star}) {
   return (
     <>
       <div className='p-8  border border-gray-300 rounded-xl mb-5 w-[90%]'>
-      <h5 className='p-4  font-bold text-[20px] mb-[20px] products truncate '>{star.title}</h5>
+      <h5 className='p-2  font-bold text-[18px] mb-[15px] products truncate '>{star.title}</h5>
      
      <picture className='relative mt-[5px] shrink-0 '>
      {
-       !like ? <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-gray-300 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center justify-center flex absolute  rounded-full drop-shadow-xl' onClick ={starFavouriteProduct}><BsSuitHeart size={24}/></button> 
-       : <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-gray-200  items-center justify-center flex absolute rounded-full drop-shadow-xl ' onClick={starFavouriteTry}><BsFillSuitHeartFill size={24} className='text-pink-700'/></button>
+       !like ? <button className='z-10 -mt-2 w-12 h-12 top-2 right-2 border border-gray-300 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center justify-center flex absolute  rounded-full drop-shadow-xl' onClick ={starFavouriteProduct}><BsSuitHeart size={24}/></button> 
+       : <button className='z-10 -mt-4 w-12 h-12 top-2 right-2 border border-gray-200  items-center justify-center flex absolute rounded-full drop-shadow-xl ' onClick={starFavouriteTry}><BsFillSuitHeartFill size={24} className='text-pink-700'/></button>
        
      } 
       
-     <img src={star.image} alt={star.alt} className=" w-full h-full shrink-0    p-2 "/>
+     <img src={star.image} alt={star.alt} title={star.alt} className=" w-full h-full shrink-0    p-2 "/>
      </picture>
   
 
    
-     <span className='flex justify-end products font-bold text-2xl p-2'>{star.price}TL</span>
+     <span className='flex justify-end products font-bold text-2xl p-2'>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price)}</span>
 
 
 

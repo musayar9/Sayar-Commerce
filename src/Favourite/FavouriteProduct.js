@@ -12,11 +12,11 @@ function FavouriteProduct() {
 
 
 <>
-{pageFavourite ?    <div className='space-y-4 p-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-72 text-md cursor-pointer text-white'>
+{pageFavourite ?    <div className=' space-y-4 p-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-72 text-md cursor-pointer text-white'>
             <h3 className='text-center text-xl font-bold'>Beğendiklerim</h3>
            
 
-              
+              <div className=' basket h-[200px] overflow-x-auto'>
               <ul className=' space-y-2'>
                
                {
@@ -28,6 +28,8 @@ function FavouriteProduct() {
                }
              </ul> 
           <StartData/>
+              </div>
+         
          
             
              

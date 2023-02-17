@@ -40,6 +40,8 @@ code {
 
 
 
+
+
 .brand {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 1500px;
@@ -63,4 +65,9 @@ code {
   border-radius: 12px;
   background: linear-gradient(to right, #AB54F3 10%,#EA489A 100%);
   border: 1px solid gainsboro
+}
+
+.basket::-webkit-scrollbar{
+  width: 0;
+
 }

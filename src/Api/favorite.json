@@ -67,7 +67,7 @@
     {
         "id": 9,
         "title":"Asus TUF Dash ",
-        "image":"https://productimages.hepsiburada.net/s/288/222-222/110000277635681.jpg/format:webp",
+        "image":"https://productimages.hepsiburada.net/s/358/222-222/110000371450311.jpg/format:webp",
         "alt":"ASUS Gaming ",
         "price":25000
 
@@ -125,10 +125,10 @@
     },
     {
         "id": 16,
-        "title":"Soundpeats Air ",
-        "image":"https://productimages.hepsiburada.net/s/288/222-222/110000277635681.jpg/format:webp",
-        "alt":"Kızıl Ötesi",
-        "price":450
+        "title":"JBL Tune 510BT",
+        "image":"https://productimages.hepsiburada.net/s/106/222-222/110000049531149.jpg/format:webp",
+        "alt":"JBL Tune 510BT Multi Connect Mikrofonlu Kulaküstü Kablosuz Kulaklık Siyah",
+        "price":1249
 
     },
     {
@@ -142,7 +142,7 @@
     {
         "id": 18,
         "title":"Apple Ipad 9.nesil",
-        "image":"https://productimages.hepsiburada.net/s/178/222-222/110000142713244.jpg/format:webp",
+        "image":"https://productimages.hepsiburada.net/s/120/222-222/110000069572862.jpg/format:webp",
         "alt":"Apple Tablet 256 GB",
         "price":9000
 

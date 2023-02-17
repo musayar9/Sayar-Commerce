@@ -1,6 +1,7 @@
 import React from 'react'
 
 function BasketProductItem({item, product}) {
+  const productPrice =  item.amount * product.price
   return (
     <>
     
@@ -9,7 +10,7 @@ function BasketProductItem({item, product}) {
             <div>
             <p className='text-md font-bold pl-2 truncate'>{product.title}</p>
             <p className='pl-2 text-lg font-bold text-red-800'>{item.amount} 
-            Adet = {item.amount * product.price} TL</p>
+            Adet ={new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(productPrice)} </p>
             </div>
            
         </li>
