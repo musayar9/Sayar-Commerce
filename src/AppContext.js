@@ -19,8 +19,9 @@ function AppContext() {
 
   const { totalMoney, setTotalMoney, basket, search, starBasket, setStarMoney} = useSite()
 const width = useWindowWidth()
- useEffect(() =>{
 
+ useEffect(() =>{
+  
   setTotalMoney(basket.reduce((acc, item) =>{
     return acc + (item.amount * (products.find(product => product.id === item.id).price))
   },0))

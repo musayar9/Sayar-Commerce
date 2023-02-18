@@ -25,6 +25,8 @@ code {
   background: linear-gradient(to right, #AB54F3 10%,#EA489A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+-web: line-through;
+
 
 }
 
@@ -69,5 +71,9 @@ code {
 
 .basket::-webkit-scrollbar{
   width: 0;
+
+}
+
+.price{
 
 }

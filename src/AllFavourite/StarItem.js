@@ -3,7 +3,7 @@ import {BsSuitHeart, BsFillSuitHeartFill} from 'react-icons/bs'
 import { useSite } from '../Context/SiteContext'
 function StarItem({star}) {
     const [like, setLike]=useState(false)
-    const {cardMoney, totalMoney, starBasket, setStarBasket, starFavourite, setStarFavourite } = useSite()
+    const {cardMoney, starBasket, setStarBasket, starFavourite, setStarFavourite, starMoney } = useSite()
     const starBasketProduct = starBasket.find(item => item.id === star.id )
    
    
@@ -92,9 +92,20 @@ function StarItem({star}) {
      <img src={star.image} alt={star.alt} title={star.alt} className=" w-full h-full shrink-0    p-2 "/>
      </picture>
   
-
+     <div className='  font-bold text-xl p-2'>
+     
+     {
+       star.price > 17000 ?     <ul className='items-center justify-between text-violet-700 shrink-0'>
+          <li className='line-through'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price)} </li>
+             <li className='text-pink-700'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price-star.price *0.20)} <span className='text-gray-500 text-md
+             space-x-2'>%20</span></li>
+       </ul>
+       :
+      <p className='text-violet-700 mt-4'>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price)}</p>
+     }
+     </div>
    
-     <span className='flex justify-end products font-bold text-2xl p-2'>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price)}</span>
+     
 
 
 
@@ -107,7 +118,7 @@ function StarItem({star}) {
      
          <button className='px-6 py-2 w-full text-xl text-purple-600 font-semibold  rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2
          disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white disabled:cursor-not-allowed 
-         ' disabled={totalMoney + star.price > cardMoney} onClick={addStarProduct}>Sepete Ekle</button><br></br>
+         ' disabled={starMoney + star.price > cardMoney} onClick={addStarProduct}>Sepete Ekle</button><br></br>
          <button className='px-6 py-2 w-full text-xl text-pink-600 font-semibold 
          rounded-full border border-pink-200 hover:text-white hover:bg-pink-600
           hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 cursor-pointer disabled:cursor-not-allowed

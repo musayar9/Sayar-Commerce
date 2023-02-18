@@ -120,7 +120,19 @@ const basketProduct = basket.find(item => item.id === product.id )
      
    
         <p className="shrink-0 flex font-bold mt-4 text-gray-400 ">{product.alt}</p>
-        <span className='flex justify-end products font-bold text-2xl p-2'>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price)}</span>
+        <div className='  font-bold text-xl p-2'>
+     
+          {
+            product.price > 1000 ?     <ul className='items-center justify-between text-violet-700 shrink-0'>
+               <li className='line-through'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price)} </li>
+                  <li className='text-pink-700'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price-product.price *0.20)} <span className='text-gray-500 text-md
+                  space-x-2'>%20</span></li>
+            </ul>
+            :
+           <p className='text-violet-700 mt-4'>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price)}</p>
+          }
+
+          </div>
 
 
 
