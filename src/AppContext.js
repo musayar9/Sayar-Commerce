@@ -13,6 +13,8 @@ import { useWindowWidth } from '@react-hook/window-size';
 import BrandProduct from './Brand/BrandProduct';
 import CommentSlider from './Comments/CommentSlider';
 import StarProduct from './AllFavourite/StarProduct'
+import Footer from './componet/Footer';
+import Categori from './Categories/Categori';
 
 
 function AppContext() {
@@ -39,39 +41,41 @@ const width = useWindowWidth()
     <Navbar/>
 
     </div>
-  
+  <div className='p-6 bg-gray-400'>
+      <Categori/>
+  </div>
+
+
+
+<div className='w-120 m-auto flex flex-wrap justify-around p-8'>
+
+{
+ products
+  .filter((product) => { return search.toLowerCase() === '' ? product : product.title.toLowerCase().includes(search); }).map((product)=>(
+    <ProductItem product={product} key={product.id}/>
+  ))
+}
+
+</div>
+
+
 
     {width < 640 && <StarProduct />}
     {width < 640 && <BrandProduct />}
     {width < 640 && <CommentSlider />}
 
 <div className='grid gap-y-8 py-4 container mx-auto'>
-  {width > 640 &&  <StarProduct/>}
 {width > 640 && <BrandProduct />}
-{width > 640 && <CommentSlider/>}
+  {width > 640 &&  <StarProduct/>}
 
 <About/>
+{width > 640 && <CommentSlider/>}
+
+
 </div>
 
-      <MoneyStatus/>
-
-      <div className='w-120 m-auto flex flex-wrap justify-around p-8'>
-
-      {
-       products
-        .filter((product) => { return search.toLowerCase() === '' ? product : product.title.toLowerCase().includes(search); }).map((product)=>(
-          <ProductItem product={product} key={product.id}/>
-        ))
-      }
-
-      </div>
-
-      {
-        totalMoney > 0 &&
-        <Basket products = {products} totalMoney ={totalMoney} basket={basket}/>
-      }
-
-
+  
+<Footer/>
     </>
   );
 }

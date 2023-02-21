@@ -33,7 +33,7 @@ console.log(starMoney)
         newMoney > 0 && (
             <>
             {payment ?
-                <div  className='z-10 space-y-4 px-2  py-4 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-96 text-md cursor-pointer text-white'>
+                <div  className='z-10 space-y-4 px-2   py-4 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-96 text-md cursor-pointer text-white'>
                 <h3 className='text-center text-xl font-bold'>Sepete Eklediklerim</h3>
                 <p className='text-center flex flex-wrap text-xl font-bold'>70.000,00 TL ve Üzeri ALışverişlerinizde 20% İndirim</p>
                

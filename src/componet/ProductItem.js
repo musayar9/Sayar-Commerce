@@ -28,7 +28,7 @@ const errorFavourite = ()=>{
     position:toast.POSITION.TOP_RIGHT
   })
 }
-  const {cardMoney, totalMoney, basket, setBasket, favourite, setFavourite} = useSite()
+  const {cardMoney, totalMoney, basket, setBasket, favourite, setFavourite, setEmptyFavourite} = useSite()
 const basketProduct = basket.find(item => item.id === product.id )
 // const favouriteİtem = favourite.find(like => like.id === product.id)
     const addProduct = () =>{
@@ -95,6 +95,7 @@ const basketProduct = basket.find(item => item.id === product.id )
       setLike(true)
       addFavourite()
   successFavourite()
+  setEmptyFavourite(true)
      
     }
 
@@ -102,20 +103,25 @@ const basketProduct = basket.find(item => item.id === product.id )
     setLike(false)
     removeFavourite()
     errorFavourite()
+  //  setEmptyFavourite(false)
   }
   return (
     <>
       <div className='p-4  border border-gray-300 rounded-xl mb-5 w-[24%]'>
        <h5 className='p-2  font-bold text-[20px] mb-[20px] products truncate '>{product.title}</h5>
      
-        <picture className='relative mt-[5px] shrink-0 '>
+        <picture className='relative mt-[5px] shrink-0 cursor-pointer'>
         {
-          !like ? <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-gray-300 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center justify-center flex absolute  rounded-full drop-shadow-xl' onClick ={favouriteProduct}><BsSuitHeart size={24}/></button> 
+          !like ? <button className='z-10 mt-2 w-12 h-12  top-2 right-2 border 
+          border-gray-300 
+          hover:text-white hover:bg-pink-600 hover:border-transparent 
+          focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2
+           items-center justify-center flex absolute  rounded-full drop-shadow-xl' onClick ={favouriteProduct}><BsSuitHeart size={24}/></button> 
           : <button className='z-10 mt-2 w-12 h-12 top-2 right-2 border border-gray-200  items-center justify-center flex absolute rounded-full drop-shadow-xl ' onClick={favouriteTry}><BsFillSuitHeartFill size={24} className='text-pink-700'/></button>
           
         } 
          
-        <img src={product.image} alt={product.alt} className=" w-[100%] shrink-0    p-2 "/>
+        <img src={product.image} alt={product.alt} className=" w-[80%] shrink-0   p-2 hover:w-[100%] duration-500 "/>
         </picture>
      
    
@@ -124,7 +130,7 @@ const basketProduct = basket.find(item => item.id === product.id )
      
           {
             product.price > 1000 ?     <ul className='items-center justify-between text-violet-700 shrink-0'>
-               <li className='line-through'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price)} </li>
+               <li className='line-through text-sm'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price)} </li>
                   <li className='text-pink-700'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price-product.price *0.20)} <span className='text-gray-500 text-md
                   space-x-2'>%20</span></li>
             </ul>

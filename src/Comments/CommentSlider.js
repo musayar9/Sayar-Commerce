@@ -42,8 +42,8 @@ function CommentSlider() {
         <Carousel responsive={responsive} autoPlay={true} infinite={true}
           swipeable={500} autoPlaySpeed={3000} style={{ width: width < 640 ? width : '' }}  >
           {comments && comments.map((comment) => (
-            <div className='mt-2 p-4 space-x-2' key={comment.id}>
-              <img src={`commentImg/${comment.image}`} alt={comment.alt} className="w-98 h-64 drop-shadow-xl rounded-lg" />
+            <div className='mt-2 p-2 space-x-0' key={comment.id}>
+              <img src={`commentImg/${comment.image}`} alt={comment.alt} className="w-98 h-64 hover:h-72 duration-500 drop-shadow-xl rounded-lg" />
             </div>
           ))}
         </Carousel>
