@@ -8,10 +8,10 @@ function BasketProductItem({item, product}) {
     <>
     
         <li className='flex items-center space-x-2  px-2 '>
-            <img className='w-14 h-14 rounded-xl flex-shrink-0' src={product.image} alt={product.alt}/>
+            <img className='w-12 h-12 rounded-xl flex-shrink-0' src={product.image} alt={product.alt}/>
             <div>
-            <p className='text-md font-semibold pl-2 truncate'>{product.title}</p>
-            <p className='pl-2 text-md  flex font-bold text-red-700'>{item.amount}  Adet =
+            <p className='text-sm font-semibold pl-2 truncate'>{product.title}</p>
+            <p className='pl-2 text-sm  flex font-bold text-red-700'>{item.amount}  Adet =
 
             {product.price > 1000 ? 
        <span>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(salePrice)} </span>

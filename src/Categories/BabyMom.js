@@ -3,12 +3,12 @@ import React from 'react'
 function BabyMom() {
   return (
     <div>
-      <button className='peer text-gray-700 text-center '  >Bebek & Anne</button>
+      <button className='peer text-gray-700 text-center  text-sm'  >Bebek & Anne</button>
       <div className='hidden peer-hover:flex hover:flex absolute'>
-        <div className='p-6 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-8 cursor-pointer w-98 text-center'>
-            <div className='p-6 space-x-8 flex justify-around'>
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                    <h6 className='text-md font-500 text-gray-300 underline'>Bebek</h6>
+        <div className='p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-6 cursor-pointer w-98 text-center'>
+            <div className='p-2 space-x-2 flex justify-around'>
+                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                    <h6 className=' font-500 text-gray-300 underline'>Bebek</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Elbiseleri</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Ayakkabı</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Takımları</li>
@@ -20,8 +20,8 @@ function BabyMom() {
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Montları</li>
                 </ul>
 
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                    <h6 className='text-md font-500 text-gray-300 underline'>Bebek Beslenme</h6>
+                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                    <h6 className='text-sm font-500 text-gray-300 underline'>Bebek Beslenme</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Mama Sandalyesi</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Mama Önlük</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Takımları</li>
@@ -32,8 +32,8 @@ function BabyMom() {
             
                 </ul>
                 
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                    <h6 className='text-md font-500 text-gray-300 underline'>Bebek Bakım</h6>
+                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                    <h6 className=' font-500 text-gray-300 underline'>Bebek Bakım</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Tuvalet</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Banyo</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Şampuanı</li>
@@ -43,8 +43,8 @@ function BabyMom() {
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Krem</li>
             
                 </ul>
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                    <h6 className='text-md font-500 text-gray-300 underline'>Bebek Taşıma</h6>
+                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                    <h6 className=' font-500 text-gray-300 underline'>Bebek Taşıma</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Puset</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Arabası</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Oto Koltuk</li>
@@ -55,8 +55,8 @@ function BabyMom() {
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Bisikletleri</li>
             
                 </ul>
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                    <h6 className='text-md font-500 text-gray-300 underline'>Bebek Oyuncak</h6>
+                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                    <h6 className=' font-500 text-gray-300 underline'>Bebek Oyuncak</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Banyo Oyuncakları</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Oyuncak Arabalar</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Oyuncak Bebekler</li>

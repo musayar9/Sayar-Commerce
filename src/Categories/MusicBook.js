@@ -3,12 +3,12 @@ import React from 'react'
 function MusicBook() {
   return (
     <div>
-    <button className='peer text-gray-700 text-center '  >Kitap & Müzik & Film</button>
+    <button className='peer text-gray-700 text-center text-sm'  >Kitap & Müzik & Film</button>
     <div className='hidden peer-hover:flex hover:flex absolute'>
-      <div className='p-6 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-8 cursor-pointer  text-center mr-5'>
-          <div className='p-6 space-x-8 flex justify-around'>
-              <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                  <h6 className='text-md font-500 text-gray-300 underline'>Enstrümanlar</h6>
+      <div className='p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-6 cursor-pointer w-72  text-center mr-5'>
+          <div className='p-2 space-x-2 flex justify-around'>
+              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
+                  <h6 className='text-sm font-500 text-gray-300 underline'>Enstrümanlar</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Gitarlar</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Bateriler</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Çalgılar</li>
@@ -20,8 +20,8 @@ function MusicBook() {
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Akordiyonlar</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Spor Çorap</li>
               </ul>
-              <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                  <h6 className='text-md font-500 text-gray-300 underline'>Kitaplar</h6>
+              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
+                  <h6 className='text-sm font-500 text-gray-300 underline'>Kitaplar</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Edabiyat Kitapları</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Fantastik & Bilim Kurgu</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Yardımcı Ders Kitapları</li>
@@ -43,8 +43,8 @@ function MusicBook() {
           </div>
           <div className='p-6 space-x-8 flex justify-around'>
 
-          <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                  <h6 className='text-md font-500 text-gray-300 underline'>Müzik(Medya)</h6>
+          <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
+                  <h6 className='text-sm font-500 text-gray-300 underline'>Müzik(Medya)</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Albümler</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Aksesuar Hediyelik</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Poster</li>
@@ -53,8 +53,8 @@ function MusicBook() {
           
               </ul>
          
-              <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2' >
-                  <h6 className='text-md font-500 text-gray-300 underline'>Film</h6>
+              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
+                  <h6 className='text-sm font-500 text-gray-300 underline'>Film</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Yerli Film</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Belgesel</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Animasyon</li>

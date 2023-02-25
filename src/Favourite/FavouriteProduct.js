@@ -19,8 +19,8 @@ function FavouriteProduct() {
 <>
 
 {pageFavourite ?   
-  <div className=' space-y-4 p-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500  p-3 rounded-xl w-80 text-md cursor-pointer text-white'>
-             <h3 className='text-center text-xl font-bold'>Beğendiklerim</h3>
+  <div className=' space-y-2 p-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500   rounded-xl w-72 text-sm cursor-pointer text-white'>
+             <h3 className='text-center text-sm font-bold'>Beğendiklerim</h3>
             
              {emptyFavourite ?
              
@@ -42,13 +42,13 @@ function FavouriteProduct() {
           
              </>
 
-: <p className="text-center">Beğendiğiniz Ürünler Burada Yer alır</p>}
+: <p className="text-center text-xs">Beğendiğiniz Ürünler Burada Yer alır</p>}
               
                <div className='border-b border-gray-300'></div>
-               <div className='flex items-center justify-evenly'>
-                {emptyFavourite ?  <button className=' text-white w-full px-2 py-2 border border-gray-300 bg-gradient-to-r hover:opacity-70 
+               <div className='flex items-center justify-evenly space-x-2'>
+                {emptyFavourite ?  <button className='text-sm text-white w-full px-2 py-2 border border-gray-300 bg-gradient-to-r hover:opacity-70 
                  from-purple-500 to-pink-500 rounded-xl' onClick={handleClick}>Favoriler Sayfası'na Git</button> 
-                 :  <button className=' text-white w-full px-2 py-2 border border-gray-300 bg-gradient-to-r hover:opacity-70 
+                 :  <button className='text-sm text-white w-full px-2 py-2 border border-gray-300 bg-gradient-to-r hover:opacity-70 
                  from-purple-500 to-pink-500 rounded-xl' onClick={()=>setEmptyFavourite(true)}>Favoriler Gör</button> }
                {/* <button className=' text-white w-full px-2 py-2 border border-gray-300 bg-gradient-to-r hover:opacity-70 
                 from-purple-500 to-pink-500 rounded-xl' onClick={()=>setPageFavourite(false)}>Favoriler</button>

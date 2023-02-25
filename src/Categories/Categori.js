@@ -12,16 +12,16 @@ function Categori() {
   return (
     <div className="container">
           <div className='h-[1px] bg-gray-200'></div>
-      <nav className='pt-6'>
+      <nav className='pt-4'>
         <ul className='flex items-center justify-center '>
-            <li  className="flex  border-r  border-l px-6 py-2  "><ManWoman/></li>
-            <li className="flex border-r border-l px-6 py-2"><BabyMom/></li>
-            <li className="flex  border-r border-l px-6 py-2"><Live/></li>
-            <li className="flex  border-r border-l px-6 py-2"><Electronic/></li>
+            <li  className="flex  border-r  border-l px-3 py-2  "><ManWoman/></li>
+            <li className="flex border-r border-l px-3 py-2"><BabyMom/></li>
+            <li className="flex  border-r border-l px-3 py-2"><Live/></li>
+            <li className="flex  border-r border-l px-3 py-2"><Electronic/></li>
             <li className="flex  border-r border-l px-6 py-2"><Sport/></li>
-            <li className="flex  border-r border-l px-6 py-2"><SuperMarket/></li>
-            <li className="flex  border-r border-l px-6 py-2"><PersonalCare/></li>
-            <li className="flex  border-r border-l px-6 py-2"><MusicBook/></li>
+            <li className="flex  border-r border-l px-3 py-2"><SuperMarket/></li>
+            <li className="flex  border-r border-l px-3 py-2"><PersonalCare/></li>
+            <li className="flex  border-r border-l px-3 py-2"><MusicBook/></li>
 
         </ul>
       </nav>

@@ -1,11 +1,11 @@
 
 import './App.css';
 import {useEffect} from 'react'
-import MoneyStatus from './componet/MoneyStatus';
+
 import ProductItem from './componet/ProductItem'
 import products from './Api/product.json'
 import favourites from './Api/favorite.json'
-import Basket from './Basket/Basket';
+
 import Navbar from './componet/Navbar'
 import { useSite } from './Context/SiteContext';
 import About from './CommerceAbout/About';
@@ -37,11 +37,11 @@ const width = useWindowWidth()
 }, [basket, setTotalMoney, starBasket, setStarMoney])
   return (
     <>
-    <div className='bg-gradient-to-r from-purple-500 to-pink-500  p-6'>
-    <Navbar/>
+    <div className='bg-gradient-to-r from-purple-500 to-pink-500  p-4'>
+    <Navbar />
 
     </div>
-  <div className='p-6 bg-gradient-to-r from-purple-500 to-pink-500'>
+  <div className='p-4 bg-gradient-to-r from-purple-500 to-pink-500'>
       <Categori/>
   </div>
 

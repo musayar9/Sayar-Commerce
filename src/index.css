@@ -60,7 +60,7 @@ code {
   align-items: center;
 }
 .search::-webkit-scrollbar{
-  width: 12px;
+  width: 10px;
 }
 
 .search::-webkit-scrollbar-thumb{
@@ -74,6 +74,3 @@ code {
 
 }
 
-.price{
-
-}
