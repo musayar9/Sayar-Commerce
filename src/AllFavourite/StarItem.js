@@ -86,7 +86,7 @@ function StarItem({star}) {
      
      <picture className='relative mt-[5px]  shrink-0'>
      {
-       !like ? <button className='z-10 -mt-2 w-10 h-10 top-2 right-2 
+       !like ? <button className='z-10 -mt-2 w-12 h-12 top-2 right-2 
        border border-gray-300 hover:text-white
         hover:bg-pink-600 hover:border-transparent focus:outline-none 
         focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center 

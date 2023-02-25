@@ -19,7 +19,7 @@ import Categori from './Categories/Categori';
 
 function AppContext() {
 
-  const { totalMoney, setTotalMoney, basket, search, starBasket, setStarMoney} = useSite()
+  const {  setTotalMoney, basket, search, starBasket, setStarMoney} = useSite()
 const width = useWindowWidth()
 
  useEffect(() =>{
@@ -41,7 +41,7 @@ const width = useWindowWidth()
     <Navbar/>
 
     </div>
-  <div className='p-6 bg-gray-400'>
+  <div className='p-6 bg-gradient-to-r from-purple-500 to-pink-500'>
       <Categori/>
   </div>
 

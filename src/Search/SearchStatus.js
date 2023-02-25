@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import {BsSearch} from 'react-icons/bs'
 import { useSite } from '../Context/SiteContext'
-import products from '../Api/product.json'
+
 import SearchProduct from './SearchProduct'
 
 function SearchStatus() {
     const [isInput, setIsInput] = useState(false)
 
 const {search, setIsSearch, searchValue, setSearchValue} = useSite()
-console.log(products)
+
 
 console.log(search)
 const handClick = (e) =>{

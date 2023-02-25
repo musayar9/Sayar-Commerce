@@ -4,6 +4,7 @@ import {SlBasketLoaded} from 'react-icons/sl'
 import BasketProduct from './BasketProduct'
 function BasketNavbar() {
     const [isBasket, setIsBasket] = useState(false)
+    
   return (
     <div>
       <button className="group  text-white bg-gradient-to-r from-purple-500 to-pink-500 text-center  border  border-gray-300 px-4 py-2 rounded-lg" id="try"

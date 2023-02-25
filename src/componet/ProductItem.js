@@ -6,12 +6,12 @@ import 'react-toastify/dist/ReactToastify.css';
 function ProductItem({product}) {
 const [like, setLike]=useState(false)
 const showToastMessage = () => {
-  toast.success('Ürün Sepete Eklendi !', {
+  toast.success(`${product.title} sepete eklendi`, {
       position: toast.POSITION.TOP_RIGHT
   });
 };
 const errorMessage = () =>{
-  toast.error("Ürün Sepetden Çıkartıldı !",{
+  toast.error("Ürün Sepetden Çıkarıldı",{
     position: toast.POSITION.TOP_RIGHT
   })
 
@@ -103,7 +103,7 @@ const basketProduct = basket.find(item => item.id === product.id )
     setLike(false)
     removeFavourite()
     errorFavourite()
-  //  setEmptyFavourite(false)
+    setEmptyFavourite(false)
   }
   return (
     <>
