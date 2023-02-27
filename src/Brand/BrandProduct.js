@@ -29,7 +29,7 @@ function BrandProduct() {
     },
     tablet: {
       breakpoint: { max: 800, min: 464 },
-      items: 3,
+      items: 4,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },

@@ -125,7 +125,7 @@ const basketProduct = basket.find(item => item.id === product.id )
         </picture>
      
    
-        <p className="shrink-0 flex font-bold mt-4 text-gray-400 text-xs lg:text-sm ">{product.alt}</p>
+        <p className="shrink-0 flex font-bold mt-4 text-gray-400 text-xs lg:text-sm truncate ">{product.alt}</p>
         <div className='  font-bold '>
      
           {
@@ -156,7 +156,7 @@ const basketProduct = basket.find(item => item.id === product.id )
             <button className='px-6 py-2 w-full text-xs md:text-sm  lg:text-md text-pink-600 font-semibold 
             rounded-full border border-pink-200 hover:text-white hover:bg-pink-600
              hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 cursor-pointer disabled:cursor-not-allowed
-             disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white' disabled={!basketProduct} onClick={removeProduct}>Sepetden Çıkar</button>
+             disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white' disabled={!basketProduct} onClick={removeProduct}>Sepet Çıkar</button>
             </div>
           
 

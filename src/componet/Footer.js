@@ -11,12 +11,12 @@ import {FiGlobe, FiPhoneCall} from 'react-icons/fi'
 
 function Footer() {
   return (
-    <div className='bg-gradient-to-r from-purple-500 to-pink-500  sm:p-4 py-3 sm:pt-10'>
+    <div className='bg-gradient-to-r from-purple-500 to-pink-500 py-4 pl-4 sm:pt-10 sm:p-6'>
         <div className='grid gap-y-5 mx-auto container'>
         <div className='grid sm:grid-cols-2  lg:grid-cols-4 gap-y-4 gap-x-8'>
         <footer>
-            <h2 className='text-xl text-violet-700 mb-3 '>Sayar</h2>
-            <ul className='grid gap-y-1 grid-cols-2 sm:grid-cols-1 text-gray-800'>
+            <h2 className='text-md md:text-lg lg:text-xl text-violet-700 mb-3 '>Sayar</h2>
+            <ul className='grid gap-y-1 text-gray-800 text-sm md:text-md lg:text-lg'>
                 <li><a href="#" className='hover:underline'>Hakkımızda</a></li>
                 <li><a href="#" className='hover:underline'>Vizyon & Misyon</a></li>
                 <li><a href="#" className='hover:underline'>Yönetim</a></li>
@@ -29,8 +29,8 @@ function Footer() {
 
 
         <footer>
-            <h2 className='text-xl text-violet-700 mb-3 '>Sayar Politikalar</h2>
-            <ul className='grid gap-y-1 grid-cols-2 sm:grid-cols-1 text-gray-800'>
+            <h2 className='text-md md:text-lg lg:text-xl text-violet-700 mb-3 '>Sayar Politikalar</h2>
+            <ul className='grid gap-y-1 text-gray-800 text-sm md:text-md lg:text-lg'>
                 <li><a href="#" className='hover:underline'>Kişisel Verilerin Korunması</a></li>
                 <li><a href="#" className='hover:underline'>Güvenli Alışveriş</a></li>
                 <li><a href="#" className='hover:underline'>Bilgi Güvenliği Politikası</a></li>
@@ -45,17 +45,17 @@ function Footer() {
 
 
         <footer>
-            <h2 className='text-xl text-violet-700 mb-3 '>Sayar İletişim</h2>
-            <ul className='grid gap-y-2 grid-cols-2 sm:grid-cols-1 text-gray-800 space-y-4'>
-                <li className='mt-2 text-xl'><a href="#" className='hover:underline-none  transition-colors duration-500 text-gray-700 border border-gray-600 hover:border-white px-4 py-2 rounded-xl hover:text-white'>Müşteri Hizmetleri</a></li>
-                <li className='ml-2'>
-                    <h2 className='flex space-x-2'><span className=' text-xl font-semibold'>Çağrı Merkezimiz</span> <FiPhoneCall className=' mt-2' size={18}/></h2>
-                   <p className='font-bold text-2xl mt-1'>0850 452 25 00</p>
+            <h2 className='text-md md:text-lg lg:text-xl text-violet-700 mb-3 '>Sayar İletişim</h2>
+            <ul className='grid gap-y-2  text-gray-800 space-y-2'>
+                <li className='mt-2 text-md md:text-lg lg:text-xl'><a href="#" className='hover:underline-none  transition-colors duration-500 text-gray-700 border border-gray-600 hover:border-white px-2 py-1 lg:px-4 lg:py-2 rounded-xl hover:text-white'>Müşteri Hizmetleri</a></li>
+                <li className='ml-2 '>
+                    <h2 className='flex space-x-2'><span className=' text-md md:text-lg lg:text-xl font-semibold'>Çağrı Merkezimiz</span> <FiPhoneCall className=' mt-2' size={18}/></h2>
+                   <p className='font-bold text-md md:text-lg lg:text-xl mt-1 ml-3'>0850 452 25 00</p>
                     
             </li>
       
-            <li className='ml-1'>
-                    <p className='flex space-x-2 text-2xl'><RiWhatsappFill className='text-green-700 ml-4' size={32}/><span className='text-2xl font-semibold'>Whatsapp</span> </p>
+            <li className=' text-md md:text-lg lg:text-2xl'>
+                    <p className='flex space-x-2 '><RiWhatsappFill className='text-green-700 ml-4 mt-1' size={30} /><span className=' font-semibold'>Whatsapp</span> </p>
                   
             </li>
             </ul>
@@ -63,7 +63,7 @@ function Footer() {
         </footer>
 
         <footer>
-                    <h3 className='text-lg text-purple-700 mb-4'>
+                    <h3 className='text-md md:text-lg lg:text-xl  text-purple-700 mb-3'>
                         Sayar'ı indirin
                     </h3>
 
@@ -98,55 +98,55 @@ function Footer() {
                 <footer>
                     
                     <ul className='flex gap-x-4'>
-                        <li className='transition-colors w-6 h-6 flex items-center justify-center rounded-xl  text-gray-800 hover:bg-white hover:text-blue-700'>
+                        <li className='transition-colors w-4 h-4 lg:w-6 lg:h-6 flex items-center justify-center rounded-xl  text-gray-800 hover:bg-white hover:text-blue-700'>
                             <a href="https://tr-tr.facebook.com/">
-                                    <BsFacebook  size={26} />
+                                    <BsFacebook  size={24} />
                                     
                             </a>
                         </li>
-                        <li  className='transition-colors w-6 h-6 flex items-center justify-center rounded-xl  text-gray-800 hover:bg-white hover:text-blue-700'>
+                        <li  className='transition-colors w-4 h-4 lg:w-6 lg:h-6 flex items-center justify-center rounded-xl  text-gray-800 hover:bg-white hover:text-blue-700'>
                             <a href="https://www.linkedin.com/home" >
-                                    <BsLinkedin  size={26} />
+                                    <BsLinkedin  size={24} />
                             </a>
                         </li>
-                        <li className='transition-colors w-6 h-6 flex items-center justify-center rounded-xl  text-gray-800 hover:text-blue-700'>
+                        <li className='transition-colors w-4 h-4 lg:w-6 lg:h-6 flex items-center justify-center rounded-xl  text-gray-800 hover:text-blue-700'>
                             <a href="https://www.instagram.com/">
-                                    <RiInstagramFill  size={26} />
+                                    <RiInstagramFill  size={24} />
                             </a>
                         </li>
-                        <li className='transition-colors w-6 h-6 flex  items-center justify-center rounded-xl  text-gray-800 hover:text-blue-700'>
+                        <li className='transition-colors w-4 h-4 lg:w-6 lg:h-6 flex  items-center justify-center rounded-xl  text-gray-800 hover:text-blue-700'>
                             <a href="https://www.twitter.com/">
-                                    <BsTwitter  size={26} />
+                                    <BsTwitter  size={24} />
                             </a>
                         </li>
-                        <li className='transition-colors w-6 h-6 flex items-center justify-center rounded-xl  text-gray-800  hover:text-red-700'>
+                        <li className='transition-colors w-4 h-4 lg:w-6 lg:h-6 flex items-center justify-center rounded-xl  text-gray-800  hover:text-red-700'>
                             <a href="https://www.youtube.com/">
-                                    <BsYoutube  size={26} />
+                                    <BsYoutube  size={24} />
                             </a>
                         </li  >
-                        <li className='transition-colors w-6 h-6 flex items-center justify-center rounded-xl  text-gray-800  hover:text-red-700'>
+                        <li className='transition-colors w-4 h-4 lg:w-6 lg:h-6 flex items-center justify-center rounded-xl  text-gray-800  hover:text-red-700'>
                             <a href="https://www.youtube.com/">
-                                    <BsPinterest  size={26} />
+                                    <BsPinterest  size={24} />
                             </a>
                         </li  >
 
                     </ul>
                 </footer>
 
-<div>  <p className='text-sm'>
+<div>  <p className='text-xs md:text-sm'>
                         <a href="www.sayar.com" className='text-violet-700 hover:underline font-bold'>Her şey bir tık uzağında</a>
                     </p></div>
             
                 <div className=' flex gap-x-3 text-gray-800'>
                
-                   <p className='text-md mt-1'>&copy; Copyright 2019-2023 Sayar</p> 
+                   <p className='text-xs md:text-sm lg:text-md  lg:mt-1'>&copy; Copyright 2019-2023 Sayar</p> 
                   
 
             
                  
 
-                    <span className='transitions-colors  h-8 flex items-center gap-x-2 border border-gray-200  justify-center rounded-xl text-sm text-white  px-3 hover:bg-purple-50 hover:text-purple-700 cursor-pointer'>
-                        <FiGlobe size={18}/>
+                    <span className='transitions-colors h-5 md:h-6 lg:h-8 flex items-center gap-x-2 border border-gray-200  justify-center rounded-xl text-xs md:text-sm text-white px-3 hover:bg-purple-50 hover:text-purple-700 cursor-pointer'>
+                        <FiGlobe size={16}/>
                         Türkçe (TR)
                     </span>
                 </div>

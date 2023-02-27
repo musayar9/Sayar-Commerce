@@ -9,7 +9,11 @@ import FavouriteNavbar from '../Favourite/FavouriteNavbar.js'
 import  {FaProductHunt} from 'react-icons/fa'
 import  {AiTwotoneHome} from 'react-icons/ai'
 
+import CategoryArea from '../Categories/CategoryArea.js'
+
+
 function Navbar() {
+
   return (
     <div className='container'>
 
@@ -29,8 +33,10 @@ function Navbar() {
                 <SearchStatus/>
 
             </li>
-            <li className='flex text-sm border border-gray-300 px-1 py-1 md:px-2 md:py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-2 cursor-pointer space-x-2'><span className='flex lg:space-x-2 hover:text-violet-700 duration-500'><span className='hidden lg:block'>Home</span><AiTwotoneHome size={20}/></span>  </li>
             <li className=' mt-2 relative '><Profile/> </li>
+          <li className='lg:hidden mt-2 relative'><CategoryArea/></li>
+            <li className='flex text-sm border border-gray-300 px-1 py-1 md:px-2 md:py-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-2 cursor-pointer space-x-2'><span className='flex lg:space-x-2 hover:text-violet-700 duration-500'><span className='hidden lg:block'>Home</span><AiTwotoneHome size={20}/></span>  </li>
+           
     
            
         </ul>

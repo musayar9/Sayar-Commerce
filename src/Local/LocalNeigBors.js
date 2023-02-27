@@ -23,7 +23,7 @@ function LocalNeigBors() {
  <select className='text-xs lg:text-sm h-8 lg:h-12 w-full px-1 py-1 lg:px-2 lg:py-2 cursor-pointer  w-full  text-gray-700 rounded-lg outline-none border focus:border-violet-700'>
  {
         optionNeig.map((neigh, index)=>(
-            <option index={index} value={neigh.value}>{neigh.label}</option>
+            <option key={index} value={neigh.value}>{neigh.label}</option>
         ))
       }
 
