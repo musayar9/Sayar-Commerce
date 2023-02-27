@@ -6,10 +6,10 @@ function Profile() {
     const [profile, setProfile] = useState(false)
   return (
     <div>
-          <button className=" text-sm peer text-white bg-gradient-to-r from-purple-500 to-pink-500 text-center  border border-gray-300 px-2 py-2 rounded-lg" id="try"
-     onClick={()=>{setProfile(profile  ? false : true)}}> <span className='flex space-x-2 hover:text-violet-700 duration-500'><span>Musa</span><FaUserCircle size={20}/></span> </button>
+          <button className=" text-sm peer text-white bg-gradient-to-r from-purple-500 to-pink-500 text-center  border border-gray-300 px-1 py-1 md:px-2 md:py-2 rounded-lg" id="try"
+     onClick={()=>{setProfile(profile  ? false : true)}}> <span className='flex lg:space-x-2 hover:text-violet-700 duration-500'><span className='hidden lg:block'>Musa</span><FaUserCircle size={20}/></span> </button>
  
-   <div className= ' hidden peer-hover:flex hover:flex absolute  mt-2 z-10'>  <ProfileAccount/> </div>
+   <div className= ' hidden peer-hover:flex hover:flex absolute mt-0 lg:mt-2 z-20'>  <ProfileAccount/> </div>
     </div>
   )
 }

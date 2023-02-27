@@ -17,7 +17,7 @@ function LocationTown() {
   return (
     <>
       
-        <select className='h-12 text-sm cursor-pointer  w-full px-2 py-2 pr-4 text-gray-700 rounded-lg outline-none border focus:border-violet-700'>
+        <select className='text-xs lg:text-sm h-8 lg:h-12 w-full px-1 py-1 lg:px-2 lg:py-2  cursor-pointer  w-full pr-4 text-gray-700 rounded-lg outline-none border focus:border-violet-700'>
                 {
                     optionsTown.map((town,index)=>(
                         <option key={index} value={town.value}>{town.label} </option>

@@ -8,7 +8,7 @@ function BasketStar() {
   return (
     <>
 
-    <ul className='space-y-4'>
+    <ul className='space-y-2'>
         {
           starBasket &&  starBasket.map((star)=>(
             <BasketStarItem key={star.id} star={star}

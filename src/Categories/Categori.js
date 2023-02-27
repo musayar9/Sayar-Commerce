@@ -10,7 +10,7 @@ import SuperMarket from './SuperMarket'
 
 function Categori() {
   return (
-    <div className="container">
+    <div className="container hidden">
           <div className='h-[1px] bg-gray-200'></div>
       <nav className='pt-4'>
         <ul className='flex items-center justify-center '>

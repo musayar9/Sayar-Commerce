@@ -6,7 +6,7 @@ function ManWoman() {
       <button className='peer text-gray-700 text-center text-sm'>Kadın & Erkek</button>
 
       <div className='hidden peer-hover:flex hover:flex absolute '>
-<div className=' p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 w-97  mt-6 text-center cursor-pointer '>
+<div className=' p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 w-90  mt-6 text-center cursor-pointer '>
 <div  className="p-2 space-x-2 space-y-2 flex justify-around">
        
         <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >

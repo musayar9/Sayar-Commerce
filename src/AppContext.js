@@ -47,7 +47,7 @@ const width = useWindowWidth()
 
 
 
-<div className='w-120 m-auto flex flex-wrap justify-around p-8'>
+<div className=' lg:w-120 lg:m-auto flex flex-wrap justify-around p-4 md:p-6 lg:p-8'>
 
 {
  products
@@ -59,12 +59,11 @@ const width = useWindowWidth()
 </div>
 
 
-
-    {width < 640 && <StarProduct />}
+{width < 640 && <StarProduct />}
     {width < 640 && <BrandProduct />}
     {width < 640 && <CommentSlider />}
 
-<div className='grid gap-y-8 py-4 container mx-auto'>
+<div className=' '>
 {width > 640 && <BrandProduct />}
   {width > 640 &&  <StarProduct/>}
 
@@ -73,7 +72,6 @@ const width = useWindowWidth()
 
 
 </div>
-
   
 <Footer/>
     </>

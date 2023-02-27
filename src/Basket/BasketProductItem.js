@@ -7,17 +7,17 @@ function BasketProductItem({item, product}) {
   return (
     <>
     
-        <li className='flex items-center space-x-2  px-2 '>
-            <img className='w-12 h-12 rounded-xl flex-shrink-0' src={product.image} alt={product.alt}/>
+        <li className='flex items-center space-x-1 lg:space-x-2  px-2 '>
+            <img className='w-10 h-10 lg:w-12 lg:h-12 rounded-xl flex-shrink-0' src={product.image} alt={product.alt}/>
             <div>
-            <p className='text-sm font-semibold pl-2 truncate'>{product.title}</p>
-            <p className='pl-2 text-sm  flex font-bold text-red-700'>{item.amount}  Adet =
+            <span className='text-xs md:text-sm font-semibold pl-2 truncate'>{product.title}</span>
+            <span className='pl-2 text-xs md:text-sm  flex font-bold text-red-700'>{item.amount}  Adet =
 
             {product.price > 1000 ? 
        <span>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(salePrice)} </span>
             :<span>  {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(productPrice)} </span>}
          
-            </p>
+            </span>
            </div>
         </li>
     </>

@@ -15,7 +15,7 @@ function LocalCity() {
   return (
     <>
       
- <select  className='text-sm h-12 w-full px-2 py-2 text-gray-700 cursor-pointer border border-gray-300 rounded-lg outline-none  focus:border-violet-700'>
+ <select  className='text-xs lg:text-sm h-8 lg:h-12 w-full px-1 py-1 lg:px-2 lg:py-2 text-gray-700 cursor-pointer border border-gray-300 rounded-lg outline-none  focus:border-violet-700'>
 
 {
                    options.map((option,key)=>(

@@ -5,7 +5,7 @@ function Sport() {
     <div>
       <button className='peer text-gray-700 text-center text-sm'  >Spor & Outdoor</button>
       <div className='hidden peer-hover:flex hover:flex absolute'>
-        <div className='p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-6 cursor-pointer w-97 text-center mr-5'>
+        <div className='p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-6 cursor-pointer w-90 text-center mr-5'>
             <div className='p-2 space-x-2 flex justify-around '>
                 <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
                     <h6 className='text-sm font-500 text-gray-300 underline'>Spor Giyim</h6>

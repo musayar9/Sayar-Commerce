@@ -33,9 +33,9 @@ console.log(starMoney)
         newMoney > 0 && (
             <>
             {payment ?
-                <div  className='z-10 space-y-4 px-2   py-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500   rounded-xl w-80 text-md cursor-pointer text-white'>
-                <h3 className='text-center text-md font-bold'>Sepete Eklediklerim</h3>
-                <p className='text-center flex flex-wrap text-md font-bold'>70.000,00 TL ve Üzeri ALışverişlerinizde 20% İndirim</p>
+                <div  className='z-10 space-y-2 lg:space-y-4 px-1 py-1 lg:px-2   lg:py-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500   rounded-xl w-64 lg:w-80 text-sm lg:text-md cursor-pointer text-white'>
+                <h3 className='text-center text-xs md:text-sm lg:text-md font-bold'>Sepete Eklediklerim</h3>
+                <p className='text-center flex flex-wrap text-xs md:text-sm lg:text-md font-bold'>70.000,00 TL ve Üzeri ALışverişlerinizde 20% İndirim</p>
                
                <div className='basket h-[200px] overflow-x-auto space-y-2'>
                <ul className=' space-y-2    '>
@@ -52,8 +52,9 @@ console.log(starMoney)
                   
 
                   <div className='border-b border-gray-300'></div>
-                  <p className='p-2 text-right font-bold text-sm text-red-700'> 
-                   {newMoney > 70000 ? <ul><li>Toplam Fiyat: {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(newMoney)}</li>
+                  <div className='p-2 text-right font-bold text-xs md:text-sm text-red-700'> 
+                   {newMoney > 70000 ?
+                    <ul><li>Toplam Fiyat: {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(newMoney)}</li>
                    <li>%20 İndirim :- {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format( newMoney * 0.20)} </li>
                     <li>İndirimli ToplamFiyat :  {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(newMoney - newMoney * 0.20)}</li>
                     
@@ -61,12 +62,12 @@ console.log(starMoney)
                      : <span>Toplam Tutar: {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(newMoney)}</span>
                     } 
                 
-                     </p>
+                     </div>
 
                   <div className='border-b border-gray-300'></div>
                   <div className='flex items-center justify-evenly space-x-2'>
-                  <button className='border  border-gray-300 text-sm px-2 py-2 rounded-lg text-white w-44 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Sepete Git</button>
-                  <button className='border border-gray-300 text-sm px-2 py-2 rounded-lg text-white w-44 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Ödeme Yap</button>
+                  <button className='border  border-gray-300 text-xs lg:text-sm px-1 py-1  lg:px-2 lg:py-2 rounded-lg text-white w-44 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Sepete Git</button>
+                  <button className='border border-gray-300 text-xs lg:text-sm px-1 py-1  lg:px-2 lg:py-2 rounded-lg text-white w-44 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Ödeme Yap</button>
                   
                   </div>
 
