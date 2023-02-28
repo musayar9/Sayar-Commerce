@@ -86,12 +86,12 @@ function StarItem({star}) {
      
      <picture className='relative mt-2 md:mt-[3px] lg:mt-[5px]  shrink-0 cursor-pointer'>
      {
-       !like ? <button className='z-10 -mt-2 w-8 h-8 md:w-10 md:h-10  top-2 right-2 float-right absolute
+       !like ? <button className='z-10 -mt-2 w-8 h-8 md:w-10 md:h-10  top-2 right-8 float-right absolute
        border border-gray-300 hover:text-white
         hover:bg-pink-600 hover:border-transparent focus:outline-none 
         focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 items-center 
         justify-center flex   rounded-full drop-shadow-xl' onClick ={starFavouriteProduct}><BsSuitHeart size={20}/></button> 
-       : <button className='z-10 -mt-2 w-8 h-8 md:w-10 md:h-10  top-2 right-2 absolute  border border-gray-200  items-center justify-center flex  rounded-full drop-shadow-xl ' onClick={starFavouriteTry}><BsFillSuitHeartFill size={20} className='text-pink-700'/></button>
+       : <button className='z-10 -mt-2 w-8 h-8 md:w-10 md:h-10  top-2 right-8 absolute  border border-gray-200  items-center justify-center flex  rounded-full drop-shadow-xl ' onClick={starFavouriteTry}><BsFillSuitHeartFill size={20} className='text-pink-700'/></button>
        
      } 
       
