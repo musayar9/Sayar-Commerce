@@ -3,12 +3,12 @@ import React from 'react'
 function Electronic() {
   return (
     <div>
-    <button className='peer text-gray-700 text-center text-sm'  >Elektronik</button>
+    <button className='peer text-white lg:text-gray-700 font-semibold lg:font-normal text-center text-md   lg:text-sm'  >Elektronik</button>
     <div className='hidden peer-hover:flex hover:flex absolute'>
-      <div className='p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-6 cursor-pointer w-97 text-center'>
-          <div className='p-2 space-x-2 flex justify-around'>
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Küçük Ev Aletleri</h6>
+      <div className='p-2 md:p-3 lg:p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 border border-gray-400 lg:border-none mt-2 lg:mt-6 cursor-pointer w-80  md:w-97 text-center'>
+          <div className='p-1 lg:p-2 space-x-2 grid grid-cols-2 md:grid-cols-4'>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Küçük Ev Aletleri</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Ütü</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Robot Süpürge</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Süpürge</li>
@@ -19,8 +19,8 @@ function Electronic() {
           
               </ul>
 
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Bilgisayar & Tablet</h6>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Bilgisayar & Tablet</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Monitör</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Yazıcı </li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Tarayıcı </li>
@@ -34,8 +34,8 @@ function Electronic() {
           
               </ul>
               
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Telefon</h6>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Telefon</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Kulaklık</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Cep Telefonu</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Kılıf</li>
@@ -46,8 +46,8 @@ function Electronic() {
                   
           
               </ul>
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Tv & Ses</h6>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Tv & Ses</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Televizyon</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Media Player</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Hoparlör</li>
@@ -58,9 +58,9 @@ function Electronic() {
 
           </div>
 
-          <div className='p-6 space-x-8 flex justify-around'>
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Beyaz Eşya</h6>
+          <div className='p-2 md:p-3 lg:p-4 space-x-2 grid grid-cols-2 md:grid-cols-4'>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Beyaz Eşya</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Buzdolabı</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline truncate'>Çamaşır Makinası</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Bulaşık Makinası</li>
@@ -71,8 +71,8 @@ function Electronic() {
           
               </ul>
 
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Kişisel Bakım</h6>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Kişisel Bakım</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Saç Düzleştirici</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Tıraş Makinası</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Saç Maşası </li>
@@ -82,8 +82,8 @@ function Electronic() {
           
               </ul>
               
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Elektronik Aksesuar</h6>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Elektronik Aksesuar</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Bilgisayar </li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Telefon Aksesuarları</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Tv Aksesuarları</li>
@@ -91,8 +91,8 @@ function Electronic() {
                   
           
               </ul>
-              <ul className='space-y-1 text-gray-700 text-sm font-[500] mt-2' >
-                  <h6 className='text-sm font-500 text-gray-300 underline'>Oyun</h6>
+              <ul className='space-y-1 text-gray-700 text-xs  md:text-sm font-[500] mt-2' >
+                  <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Oyun</h6>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Playstation</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Nintendo</li>
                   <li className='hover:text-violet-700 duration-500 hover:underline'>Xbox</li>

@@ -28,7 +28,7 @@ const errorFavourite = ()=>{
     position:toast.POSITION.TOP_RIGHT
   })
 }
-  const {cardMoney, totalMoney, basket, setBasket, favourite, setFavourite, setEmptyFavourite} = useSite()
+  const {cardMoney, totalMoney, basket, setBasket, favourite, setFavourite, setEmptyFavourite,emptyFavourite} = useSite()
 const basketProduct = basket.find(item => item.id === product.id )
 // const favouriteİtem = favourite.find(like => like.id === product.id)
     const addProduct = () =>{
@@ -103,7 +103,8 @@ const basketProduct = basket.find(item => item.id === product.id )
     setLike(false)
     removeFavourite()
     errorFavourite()
-    setEmptyFavourite(false)
+    setEmptyFavourite(emptyFavourite ? true: false)
+    
   }
   return (
     <>
@@ -160,26 +161,12 @@ const basketProduct = basket.find(item => item.id === product.id )
             </div>
           
 
-            {/* <p>
-                {basketProduct ? `${basketProduct.amount} adet ürün sepete eklendi` : null}
-            </p> */}
+         
 
-            {/* <p>
-                {
-                    basketProduct ? `Toplam Fiyat = ${product.price * basketProduct.amount} Tl` : null
-                }
-            </p> */}
         </div>
-        <br>
-        </br>
-{/*      
-        <p>{
-         favouriteİtem ? `${favouriteİtem.title}` : null
-        
-        }</p> */}
 
 
-         {/* <button className={!like ? `btn btn-primary` : "btn btn-danger"} onClick ={favouriteProduct}>beğen</button>  */}
+  
 
     
 

@@ -38,7 +38,7 @@ function BrandProduct() {
   };
   return (
     <>
-      <h2 className="pt-2 pl-14 -mb-2 text-2xl font-bold products mt-6">Markalar</h2>
+      <h2 className="pt-2 ml-6 md:pl-8 lg:pl-10 -mb-2 text-xl lg:text-2xl font-bold products mt-4 lg:mt-6">Markalar</h2>
       <div className='m-4 p-4  rounded-xl cursor-pointer border-r border-l border-gray-400 mt-6
  relative  after:bg-gradient-to-r after:from-purple-300 after:to-transparent after:absolute after:inset-0 after:w-full after:rounded-xl after:h-full after:z-10
       '>

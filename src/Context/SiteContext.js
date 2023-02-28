@@ -16,6 +16,7 @@ const ProvideSite =({children})=>{
    const [like, setLike] = useState(false)
    const [emptyFavourite, setEmptyFavourite] = useState(false)
    const [category, setCategory] = useState(false)
+
     const data = {
         cardMoney,
         setCardMoney,
@@ -35,7 +36,8 @@ const ProvideSite =({children})=>{
         starMoney, 
         setStarMoney,
         emptyFavourite, setEmptyFavourite,
-        category, setCategory
+        category, setCategory,
+   
     
     }
 

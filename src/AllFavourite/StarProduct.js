@@ -30,7 +30,7 @@ function StarProduct() {
       };
   return (
     <>
-       <h2 className="pt-2 pl-14 -mb-2 text-2xl font-bold products mt-6">Favori Ürünler</h2>
+       <h2 className="pt-2 ml-6 md:pl-8 lg:pl-10 -mb-2 text-xl lg:text-2xl font-bold products mt-4 lg:mt-6">Favori Ürünler</h2>
       <div className='m-4 text-center p-2  rounded-xl cursor-pointer border-r border-l border-gray-200 mt-4
 
       '>

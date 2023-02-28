@@ -13,10 +13,11 @@ function BasketProduct() {
 
    const showToast = () => {
     toast.success('Ödeme Yapıldı', {
-      position: toast.POSITION.TOP_RIGHT
+      position: toast.POSITION.TOP_RIGHT,
+    
     });
 };
-console.log(starMoney)
+
    const EmptyBasket = () =>{
     showToast()
     setBasket([])
@@ -25,7 +26,11 @@ console.log(starMoney)
    }
    const newMoney = starMoney + totalMoney
 
-
+const goBasket = () =>{
+setPayment(false)
+setBasket([])
+setStarBasket([])
+}
 
   return (
     <>
@@ -33,7 +38,7 @@ console.log(starMoney)
         newMoney > 0 && (
             <>
             {payment ?
-                <div  className='z-10 space-y-2 lg:space-y-4 px-1 py-1 lg:px-2   lg:py-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500   rounded-xl w-64 lg:w-80 text-sm lg:text-md cursor-pointer text-white'>
+                <div  className='z-10 space-y-2 lg:space-y-4 px-1 py-1 lg:px-2   lg:py-2 border border-gray-300 bg-gradient-to-r from-purple-500 to-pink-500   rounded-xl w-64 md:w-72 lg:w-80 text-sm lg:text-md cursor-pointer text-white'>
                 <h3 className='text-center text-xs md:text-sm lg:text-md font-bold'>Sepete Eklediklerim</h3>
                 <p className='text-center flex flex-wrap text-xs md:text-sm lg:text-md font-bold'>70.000,00 TL ve Üzeri ALışverişlerinizde 20% İndirim</p>
                
@@ -66,13 +71,13 @@ console.log(starMoney)
 
                   <div className='border-b border-gray-300'></div>
                   <div className='flex items-center justify-evenly space-x-2'>
-                  <button className='border  border-gray-300 text-xs lg:text-sm px-1 py-1  lg:px-2 lg:py-2 rounded-lg text-white w-44 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Sepete Git</button>
+                  <button className='border  border-gray-300 text-xs lg:text-sm px-1 py-1  lg:px-2 lg:py-2 rounded-lg text-white w-44 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={goBasket}>Sepete Git</button>
                   <button className='border border-gray-300 text-xs lg:text-sm px-1 py-1  lg:px-2 lg:py-2 rounded-lg text-white w-44 bg-gradient-to-r hover:opacity-70  from-purple-500 to-pink-500' onClick={EmptyBasket}>Ödeme Yap</button>
                   
                   </div>
 
                 
-                  <ToastContainer autoClose={500} pauseOnFocusLoss={true} pauseOnHover={false}/>
+                  <ToastContainer  autoClose={500} pauseOnFocusLoss={true} pauseOnHover={false}/>
                 </div>
              : null}
              </>

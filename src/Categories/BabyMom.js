@@ -3,11 +3,11 @@ import React from 'react'
 function BabyMom() {
   return (
     <div>
-      <button className='peer text-gray-700 text-center  text-sm'  >Bebek & Anne</button>
+      <button className='peer text-white lg:text-gray-700 font-semibold lg:font-normal text-center   text-md   lg:text-sm'  >Bebek & Anne</button>
       <div className='hidden peer-hover:flex hover:flex absolute'>
-        <div className='p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 mt-6 cursor-pointer w-98 text-center'>
-            <div className='p-2 space-x-2 flex justify-around'>
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+        <div className='p-2 md:p-3 lg:p-4 z-20 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 border border-gray-400 lg:border-none  mt-2 lg:mt-6 cursor-pointer  w-80 md:w-97 lg:w-98 text-center'>
+            <div className='p-1 lg:p-2 space-x-2  grid grid-cols-2 md:grid-cols-5'>
+                <ul className='space-y-1 text-gray-700  font-[500] mt-2 text-xs  md:text-sm' >
                     <h6 className=' font-500 text-gray-300 underline'>Bebek</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Elbiseleri</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Ayakkabı</li>
@@ -20,8 +20,8 @@ function BabyMom() {
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Montları</li>
                 </ul>
 
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
-                    <h6 className='text-sm font-500 text-gray-300 underline'>Bebek Beslenme</h6>
+                <ul className='space-y-1 text-gray-700  font-[500] mt-2 text-xs  md:text-sm' >
+                    <h6 className='text-xs  md:text-sm font-500 text-gray-300 underline'>Bebek Beslenme</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Mama Sandalyesi</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Mama Önlük</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Takımları</li>
@@ -32,7 +32,7 @@ function BabyMom() {
             
                 </ul>
                 
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                <ul className='space-y-1 text-gray-700  font-[500] mt-2 text-xs  md:text-sm' >
                     <h6 className=' font-500 text-gray-300 underline'>Bebek Bakım</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Tuvalet</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Banyo</li>
@@ -43,7 +43,7 @@ function BabyMom() {
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Krem</li>
             
                 </ul>
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                <ul className='space-y-1 text-gray-700  font-[500] mt-2 text-xs  md:text-sm' >
                     <h6 className=' font-500 text-gray-300 underline'>Bebek Taşıma</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Puset</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Arabası</li>
@@ -55,7 +55,7 @@ function BabyMom() {
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Bebek Bisikletleri</li>
             
                 </ul>
-                <ul className='space-y-1 text-gray-700 text-md font-[500] mt-2 text-sm' >
+                <ul className='space-y-1 text-gray-700  font-[500] mt-2 text-xs  md:text-sm' >
                     <h6 className=' font-500 text-gray-300 underline'>Bebek Oyuncak</h6>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Banyo Oyuncakları</li>
                     <li className='hover:text-violet-700 duration-500 hover:underline'>Oyuncak Arabalar</li>

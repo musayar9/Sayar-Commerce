@@ -10,7 +10,6 @@ function SearchStatus() {
 const {search, setIsSearch, searchValue, setSearchValue} = useSite()
 
 
-console.log(search)
 const handClick = (e) =>{
 setIsSearch(e.target.value);
 setIsInput(isInput ? false : true)

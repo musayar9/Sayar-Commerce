@@ -40,7 +40,7 @@ function CommentSlider() {
 
 <div className='m-4 text-center p-4  rounded-xl cursor-pointer border-r border-l border-gray-400 '>
 
-      <h2 className='pt-2 -mb-4 pl-[30px] text-2xl font-bold products flex justify-left'>Yorumlar</h2>
+      <h2 className='pt-2 -mb-4 pl-[30px] text-xl lg:text-2xl font-bold products flex justify-left'>Yorumlar</h2>
         <Carousel responsive={responsive} autoPlay={true} infinite={true} 
           swipeable={500} autoPlaySpeed={3000}   >
           {comments && comments.map((comment) => (

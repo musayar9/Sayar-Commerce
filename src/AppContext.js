@@ -33,7 +33,7 @@ function AppContext() {
     }, 0))
 
 
-    console.log(basket)
+  
   }, [basket, setTotalMoney, starBasket, setStarMoney])
 
 
@@ -52,6 +52,7 @@ function AppContext() {
             {width < 1024 && (
               <div className='p-4 bg-gradient-to-r from-purple-500 to-pink-500  '>
                 <Categori/>
+
               </div>
             )}
 

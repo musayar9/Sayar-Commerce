@@ -11,18 +11,11 @@ function SearchProduct({search, isInput, setIsInput}) {
         
           {
             products
-            .filter((product) => { return search.toLowerCase('tr') === '' ? product : product.title.toLowerCase('tr'
+            .filter((product) => { return search.toLowerCase() === '' ? product : product.title.toLowerCase(
             ).includes(search); })
             .map((product)=>(
               <SearchValue key={product.id} product={product} isInput={isInput} setIsInput={setIsInput}/>
-              // <li className='flex space-y-2 space-x-2 ' key={product.id}>       
-    
-              // <img className='w-12 h-12 rounded-xl' src={product.image} alt={product.alt}/>
-              //     <span className='text-white'>{product.title}</span>
-               
-               
-                  
-          //  </li>
+      
             ))
         }
   
