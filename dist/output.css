@@ -635,6 +635,14 @@ video {
   z-index: 50;
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1654,6 +1662,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:mb-\[6px\] {
     margin-bottom: 6px;
   }
@@ -1834,6 +1846,10 @@ video {
 
   .lg\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
   }
 
   .lg\:block {
