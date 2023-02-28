@@ -103,7 +103,7 @@ function StarItem({star}) {
      {
        star.price > 17000 ?     <ul className='items-center justify-between text-violet-700 shrink-0'>
           <li className='line-through text-xs md:text-sm  '> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price)} </li>
-             <li className='text-pink-700  text-sm md:text-md lg:text-lg'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price-star.price *0.20)} <span className='text-gray-500  text-sm md:text-md 
+             <li className='text-pink-700  text-sm md:text-md lg:text-lg'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price-star.price *0.20)} <span className='text-gray-500  text-xs md:text-sm
              space-x-2'>%20</span></li>
        </ul>
        :
