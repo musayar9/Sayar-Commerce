@@ -111,9 +111,9 @@ const basketProduct = basket.find(item => item.id === product.id )
       <div className='p-2  border border-gray-300 rounded-xl  mb-2 lg:mb-5 w-[48%] md:w-[32%] lg:w-[23%]  space-x-2 md:space-x-0  '>
        <h5 className='p-2   font-bold text-sm md:text-md md:mb-[6px] lg:mb-[10px] products truncate '>{product.title}</h5>
      
-        <picture className=' mt-2 md:mt-[3px] lg:mt-[5px] shrink-0 cursor-pointer'>
+        <picture className='relative mt-2 md:mt-[3px] lg:mt-[5px] shrink-0 cursor-pointer'>
         {
-          !like ? <button className=' z-10 mt-2 w-8 h-8 md:w-10 md:h-10  top-2 right-2 lg:top-4 lg:right-6 border 
+          !like ? <button className='absolute z-10 mt-2 w-8 h-8 md:w-10 md:h-10  top-2 right-2 lg:top-4 lg:right-6 border 
           border-gray-300 
           hover:text-white hover:bg-pink-600 hover:border-transparent 
           focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2
