@@ -102,7 +102,7 @@ function StarItem({star}) {
      
      {
        star.price > 17000 ?     <ul className='items-center justify-between text-violet-700 shrink-0'>
-          <li className='line-through text-[8px] md:text-sm  '> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price)} </li>
+          <li className='line-through text-[10px] md:text-sm  '> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price)} </li>
              <li className='text-pink-700  text-xs md:text-md lg:text-lg'> {new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(star.price-star.price *0.20)} <span className='text-gray-500  text-xs md:text-sm
              space-x-2'>%20</span></li>
        </ul>
@@ -122,10 +122,10 @@ function StarItem({star}) {
       
          <div className='space-y-2 w-full '>
      
-         <button className='px-6 py-2 w-full  text-xs md:text-sm lg:text-md text-purple-600 font-semibold  rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2
+         <button className='px-6 py-2 w-full  text-[10px] md:text-sm lg:text-md text-purple-600 font-semibold  rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2
          disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white disabled:cursor-not-allowed 
          ' disabled={starMoney + star.price > cardMoney} onClick={addStarProduct}>Sepete Ekle</button><br></br>
-         <button className='px-6 py-2 w-full  text-xs md:text-sm lg:text-md text-pink-600 font-semibold 
+         <button className='px-6 py-2 w-full  text-[10px] md:text-sm lg:text-md text-pink-600 font-semibold 
          rounded-full border border-pink-200 hover:text-white hover:bg-pink-600
           hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 cursor-pointer disabled:cursor-not-allowed
           disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white' disabled={!starBasketProduct} onClick={removeStarPoduct}>Sepet Çıkar</button>
