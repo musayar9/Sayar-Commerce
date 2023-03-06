@@ -1,28 +1,27 @@
 [
-    {
-      "id": 1,
-      "image": "comment-1.jpg",
-      "alt":"comment-1"
-    },
-    {
-      "id": 2,
-      "image": "comment-2.jpg",
-      "alt": "comment-2"
-    },
-    {
-      "id": 3,
-      "image": "comment-3.jpg",
-      "alt": "comment-3"
-    },
-    {
-      "id": 4,
-      "image": "comment-4.jpg",
-      "alt": "comment-4"
-    },
-    {
-        "id": 5,
-        "image": "comment-5.jpg",
-        "alt": "comment-5"
-
-      }
-  ]
+  {
+    "id": 1,
+    "image": "comment-1.jpg",
+    "alt": "comment-1"
+  },
+  {
+    "id": 2,
+    "image": "comment-2.jpg",
+    "alt": "comment-2"
+  },
+  {
+    "id": 3,
+    "image": "comment-3.jpg",
+    "alt": "comment-3"
+  },
+  {
+    "id": 4,
+    "image": "comment-4.jpg",
+    "alt": "comment-4"
+  },
+  {
+    "id": 5,
+    "image": "comment-5.jpg",
+    "alt": "comment-5"
+  }
+]

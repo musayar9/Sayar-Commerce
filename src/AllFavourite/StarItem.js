@@ -130,16 +130,9 @@ function StarItem({star}) {
           hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2 cursor-pointer disabled:cursor-not-allowed
           disabled:opacity-80 disabled:text-red-700 disabled:hover:bg-white' disabled={!starBasketProduct} onClick={removeStarPoduct}>Sepet Çıkar</button>
          </div>
-       
-
-   
+  
      </div>
-    
 
-
-
-   
- 
       </div>
     </>
   )

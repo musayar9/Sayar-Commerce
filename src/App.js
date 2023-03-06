@@ -10,11 +10,6 @@ function App() {
  <>
 <SiteContext>
   <AppContext/>
-
-
-
-
-
 </SiteContext>
     </>
   );

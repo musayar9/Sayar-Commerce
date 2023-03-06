@@ -13,10 +13,7 @@ function FavouriteLikeItem({like, product}) {
             product.price > 1000 ? <span>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price-product.price *0.20)}</span>
               : <span>{new Intl.NumberFormat('tr-TR',{style:'currency', currency:'TRY'}).format(product.price)}</span>
           }
-      
-          
-          
-          
+   
           </p>
           </div>
        

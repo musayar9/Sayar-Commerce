@@ -5,14 +5,9 @@ import "react-multi-carousel/lib/styles.css";
 import Brand from '../Api/brand.json'
 import { useEffect, useState } from 'react'
 
-
-
-
 function BrandProduct() {
 
   const [brands, setBrands] = useState([])
-
-
   useEffect(() => {
     setBrands(Brand)
   }, [])
@@ -44,11 +39,11 @@ function BrandProduct() {
       '>
 
         <Carousel showDots={false} responsive={responsive} autoPlay={true} infinite={true}
-          swipeable={500} autoPlaySpeed={3000}  
+          swipeable={500} autoPlaySpeed={3000}
         >
           {brands && brands.map((brand) => (
             <div key={brand.id} className='flex items-center justify-center -z-50'>
-              <div  className="px-2 p-2 ">
+              <div className="px-2 p-2 ">
                 <img src={`markaImg/${brand.image}`} alt={brand.title} className="rounded-full w-20 h-20  border border-gray-300 drop-shadow-xl" />
                 <p className="text-md p-2 font-bold products">{brand.title}</p>
               </div>

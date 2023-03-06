@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-
-
 import React from 'react'
 import { BsLinkedin,  BsFacebook, BsTwitter, BsYoutube, BsPinterest} from 'react-icons/bs'
 import {RiInstagramFill, RiWhatsappFill} from 'react-icons/ri'

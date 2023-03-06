@@ -1,177 +1,142 @@
 [
     {
         "id": 1,
-        "title":"iPhone 11 128 GB",
-        "image":"https://productimages.hepsiburada.net/s/49/222-222/10986386554930.jpg/format:webp",
-        "alt":"İPhone 11 128 GB",
-        "price":17400
-
+        "title": "iPhone 11 128 GB",
+        "image": "https://productimages.hepsiburada.net/s/49/222-222/10986386554930.jpg/format:webp",
+        "alt": "İPhone 11 128 GB",
+        "price": 17400
     },
     {
         "id": 2,
-        "title":"Vestel 65U9600  ",
-        "image":"https://productimages.hepsiburada.net/s/133/222-222/110000084738256.jpg/format:webp",
-        "alt":"Vestel 164 Ekran",
-        "price":10500
-
+        "title": "Vestel 65U9600  ",
+        "image": "https://productimages.hepsiburada.net/s/133/222-222/110000084738256.jpg/format:webp",
+        "alt": "Vestel 164 Ekran",
+        "price": 10500
     },
     {
         "id": 3,
-        "title":"Samsung Galaxy M33 128 GB",
-        "image":"https://productimages.hepsiburada.net/s/188/222-222/110000153952150.jpg/format:webp",
-        "alt":"Samsung Galaxy M33 128 GB",
-        "price":7600
-
+        "title": "Samsung Galaxy M33 128 GB",
+        "image": "https://productimages.hepsiburada.net/s/188/222-222/110000153952150.jpg/format:webp",
+        "alt": "Samsung Galaxy M33 128 GB",
+        "price": 7600
     },
     {
         "id": 4,
-        "title":"Asus ROG Strix ",
-        "image":"https://productimages.hepsiburada.net/s/221/222-222/110000201101935.jpg/format:webp",
-        "alt":"Asus Rog Strix",
-        "price":32000
-
+        "title": "Asus ROG Strix ",
+        "image": "https://productimages.hepsiburada.net/s/221/222-222/110000201101935.jpg/format:webp",
+        "alt": "Asus Rog Strix",
+        "price": 32000
     },
-  
     {
         "id": 5,
-        "title":"iPhone 14 256 GB",
-        "image":"https://productimages.hepsiburada.net/s/280/222-222/110000267190501.jpg/format:webp",
-        "alt":"İPhone 14 256 GB",
-        "price":30000
-
+        "title": "iPhone 14 256 GB",
+        "image": "https://productimages.hepsiburada.net/s/280/222-222/110000267190501.jpg/format:webp",
+        "alt": "İPhone 14 256 GB",
+        "price": 30000
     },
     {
         "id": 6,
-        "title":"iPhone 14 Pro 128 GB",
-        "image":"https://productimages.hepsiburada.net/s/283/222-222/110000271395200.jpg/format:webp",
-        "alt":"İPhone 14 Pro 128 GB",
-        "price":17400
-
+        "title": "iPhone 14 Pro 128 GB",
+        "image": "https://productimages.hepsiburada.net/s/283/222-222/110000271395200.jpg/format:webp",
+        "alt": "İPhone 14 Pro 128 GB",
+        "price": 17400
     },
     {
         "id": 7,
-        "title":"Apple Airpods Pro(2.nesil)",
-        "image":"https://productimages.hepsiburada.net/s/337/222-222/110000265929997.jpg/format:webp",
-        "alt":"Apple Bluethoot Kulaklık",
-        "price":5100
-
+        "title": "Apple Airpods Pro(2.nesil)",
+        "image": "https://productimages.hepsiburada.net/s/337/222-222/110000265929997.jpg/format:webp",
+        "alt": "Apple Bluethoot Kulaklık",
+        "price": 5100
     },
     {
         "id": 8,
-        "title":"Apple Airpods 2.nesil",
-        "image":"https://productimages.hepsiburada.net/s/337/222-222/110000031510507.jpg/format:webp",
-        "alt":"Apple Kulaklık",
-        "price":2500
-
+        "title": "Apple Airpods 2.nesil",
+        "image": "https://productimages.hepsiburada.net/s/337/222-222/110000031510507.jpg/format:webp",
+        "alt": "Apple Kulaklık",
+        "price": 2500
     },
     {
         "id": 9,
-        "title":"Asus TUF Dash ",
-        "image":"https://productimages.hepsiburada.net/s/358/222-222/110000371450311.jpg/format:webp",
-        "alt":"ASUS Gaming ",
-        "price":25000
-
+        "title": "Asus TUF Dash ",
+        "image": "https://productimages.hepsiburada.net/s/358/222-222/110000371450311.jpg/format:webp",
+        "alt": "ASUS Gaming ",
+        "price": 25000
     },
     {
         "id": 10,
-        "title":"Soundpeats Air ",
-        "image":"https://productimages.hepsiburada.net/s/288/222-222/110000277635681.jpg/format:webp",
-        "alt":"Kızıl Ötesi",
-        "price":450
-
+        "title": "Soundpeats Air ",
+        "image": "https://productimages.hepsiburada.net/s/288/222-222/110000277635681.jpg/format:webp",
+        "alt": "Kızıl Ötesi",
+        "price": 450
     },
-
     {
         "id": 11,
-        "title":"Lenova Idepad Gaming ",
-        "image":"https://productimages.hepsiburada.net/s/89/222-222/110000031943585.jpg/format:webp",
-        "alt":"Lenova Idepad Gaming Intel Core i5",
-        "price":16000
-
+        "title": "Lenova Idepad Gaming ",
+        "image": "https://productimages.hepsiburada.net/s/89/222-222/110000031943585.jpg/format:webp",
+        "alt": "Lenova Idepad Gaming Intel Core i5",
+        "price": 16000
     },
     {
         "id": 12,
-        "title":"Casper Nirvana C500 ",
-        "image":"https://productimages.hepsiburada.net/s/350/222-222/110000359182775.jpg/format:webp",
-        "alt":"Casper Nirvana intel core i5",
-        "price":9000
-
+        "title": "Casper Nirvana C500 ",
+        "image": "https://productimages.hepsiburada.net/s/350/222-222/110000359182775.jpg/format:webp",
+        "alt": "Casper Nirvana intel core i5",
+        "price": 9000
     },
     {
         "id": 13,
-        "title":"MSI Katana ",
-        "image":"https://productimages.hepsiburada.net/s/237/222-222/110000220008737.jpg/format:webp",
-        "alt":"Msi Katan intel core i7",
-        "price":30000
-
+        "title": "MSI Katana ",
+        "image": "https://productimages.hepsiburada.net/s/237/222-222/110000220008737.jpg/format:webp",
+        "alt": "Msi Katan intel core i7",
+        "price": 30000
     },
     {
         "id": 14,
-        "title":"iPhone 13 250 GB",
-        "image":"https://productimages.hepsiburada.net/s/189/222-222/110000155170579.jpg/format:webp",
-        "alt":"İPhone 13 150 GB",
-        "price":28600
-
+        "title": "iPhone 13 250 GB",
+        "image": "https://productimages.hepsiburada.net/s/189/222-222/110000155170579.jpg/format:webp",
+        "alt": "İPhone 13 150 GB",
+        "price": 28600
     },
-  
-  
     {
         "id": 15,
-        "title":"Anker SoundCore R100",
-        "image":"https://productimages.hepsiburada.net/s/131/222-222/110000081693287.jpg/format:webp",
-        "alt":"Tws Bluetooth Kulaklık",
-        "price":650
-
+        "title": "Anker SoundCore R100",
+        "image": "https://productimages.hepsiburada.net/s/131/222-222/110000081693287.jpg/format:webp",
+        "alt": "Tws Bluetooth Kulaklık",
+        "price": 650
     },
     {
         "id": 16,
-        "title":"JBL Tune 510BT",
-        "image":"https://productimages.hepsiburada.net/s/106/222-222/110000049531149.jpg/format:webp",
-        "alt":"JBL Tune 510BT Multi Connect Mikrofonlu Kulaküstü Kablosuz Kulaklık Siyah",
-        "price":1249
-
+        "title": "JBL Tune 510BT",
+        "image": "https://productimages.hepsiburada.net/s/106/222-222/110000049531149.jpg/format:webp",
+        "alt": "JBL Tune 510BT Multi Connect Mikrofonlu Kulaküstü Kablosuz Kulaklık Siyah",
+        "price": 1249
     },
     {
         "id": 17,
-        "title":"Samsung Tab S8",
-        "image":"https://productimages.hepsiburada.net/s/178/222-222/110000142713244.jpg/format:webp",
-        "alt":"Samsung Tab 8",
-        "price":18500
-
+        "title": "Samsung Tab S8",
+        "image": "https://productimages.hepsiburada.net/s/178/222-222/110000142713244.jpg/format:webp",
+        "alt": "Samsung Tab 8",
+        "price": 18500
     },
     {
         "id": 18,
-        "title":"Apple Ipad 9.nesil",
-        "image":"https://productimages.hepsiburada.net/s/120/222-222/110000069572862.jpg/format:webp",
-        "alt":"Apple Tablet 256 GB",
-        "price":9000
-
+        "title": "Apple Ipad 9.nesil",
+        "image": "https://productimages.hepsiburada.net/s/120/222-222/110000069572862.jpg/format:webp",
+        "alt": "Apple Tablet 256 GB",
+        "price": 9000
     },
     {
         "id": 19,
-        "title":"LGOLED5CSLA  ",
-        "image":"https://productimages.hepsiburada.net/s/317/222-222/110000311578393.jpg/format:webp",
-        "alt":"Lg 139 Ekran",
-        "price":22500
-
+        "title": "LGOLED5CSLA  ",
+        "image": "https://productimages.hepsiburada.net/s/317/222-222/110000311578393.jpg/format:webp",
+        "alt": "Lg 139 Ekran",
+        "price": 22500
     },
-  
     {
         "id": 20,
-        "title":"Samsung Galaxy A53 128GB",
-        "image":"https://productimages.hepsiburada.net/s/193/222-222/110000160064097.jpg/format:webp",
-        "alt":"Samsung Galaxy A53 ",
-        "price":10500
-
+        "title": "Samsung Galaxy A53 128GB",
+        "image": "https://productimages.hepsiburada.net/s/193/222-222/110000160064097.jpg/format:webp",
+        "alt": "Samsung Galaxy A53 ",
+        "price": 10500
     }
-
-
-
-
-
-
-
-
-
-
 ]
