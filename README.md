@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Sayar  Commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+![image-1](img/8.jpg)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Bu projemizde e-ticaret sitesi yaptık. Bu projede ürünleri sepete ekleme, ürünleri sepet den çıkarma, beğenilen ürünleri favorilere ekleme ve çıkarma gibi işlemler react.js kullanılarak yapıldı. Bu projede kendi Api'lerimizi oluşturarak  bu api'ler üzerinden  veri çekme  işlemlerini gerçekleştirdik. Bu projede state yönetimini  react'ın Context  yapısı üzerinden gerçekleştirdik. 
 
-### `npm test`
+React-Multi-Carousel kullanarak markalar ve favori ürünlerimizi carousel yapısı içerinde oluşturduk.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Proje tasarımını tailwindcss ile gerçekleştirdik. Proje bilgisayar, tablet ve mobile uygun olarak responsive tasarımını yaptık. 
 
-### `npm run build`
+## Sayfa Yapısı
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Aşağıdaki resimde'de görüldüğü gibi kullanıcı konum başlığına tıkladığında açılan alandan kendi konum bilgisini girebilecek.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image-2](img/1.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Kullanıcı sepete eklediği ürünleri sepetim başlığı üzerine tıkladığında açılan alandan görebilecek.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image-3](img/2.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Kullanıcı beğendiği ürünleri'de favorilerim başlığına tıkladığında açılan alandan beğendiği ürünleri görebilecek.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image-4](img/3.jpg)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Markalar ve favori ürünler Carousel yapısı içinde kullanıcıya gösteriliyor.
 
-### Code Splitting
+![image-5](img/6.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image-6](img/5.jpg)
 
-### Analyzing the Bundle Size
+Sayfanın en sonunda footer alanımız yer almaktadır.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image-7](img/7.jpg)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### Proje içerisinde kullanılan Teknolojiler;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. React.js
+2. Tailwindcss
 
-### Deployment
+### Proje içerisinde kullanılan npm paketleri
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. react-multi-carousel
+2. react-slick
+3. react-toastifty
+4. react-icons
+5. tailwincss
+6. useWindowSize
 
-### `npm run build` fails to minify
+### Authors:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Musa SAYAR
+
+
+
