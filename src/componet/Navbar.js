@@ -6,7 +6,6 @@ import BasketNavbar from '../Basket/BasketNavbar.js'
 
 import SearchStatus from '../Search/SearchStatus.js'
 import FavouriteNavbar from '../Favourite/FavouriteNavbar.js'
-import  {FaProductHunt} from 'react-icons/fa'
 import  {AiTwotoneHome} from 'react-icons/ai'
 
 import CategoryArea from '../Categories/CategoryArea.js'
